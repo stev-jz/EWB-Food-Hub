@@ -2,6 +2,13 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Nav from "@/components/Navbar";
 import { Source_Sans_3 } from 'next/font/google'
+import { Montserrat } from "next/font/google";
+
+const montserrat = Montserrat({
+  subsets: ['latin'],
+  weight: ['400', '600', '700'],
+  variable: '--font-montserrat',
+});
 
 const sourceSans3 = Source_Sans_3({
   subsets: ['latin'],
@@ -21,7 +28,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${sourceSans3.variable}antialiased overflow-x-auto min-w-max`}>
+      <body className={`${montserrat.variable}antialiased overflow-x-auto min-w-max`}>
         <div>
           <main>
             <Nav/>

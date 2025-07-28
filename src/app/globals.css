@@ -12,6 +12,7 @@
   --font-mono: var(--font-geist-mono);
 }
 :root {
+  --font-montserrat: 'Montserrat', Helvetica, sans-serif;
   --font-source-sans-3: 'Source Sans 3', sans-serif;
 }
 
@@ -28,7 +29,7 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-montserrat), Helvetica, sans-serif;
 }
 
 nav a:hover {
