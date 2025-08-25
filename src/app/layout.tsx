@@ -3,6 +3,7 @@ import "./globals.css";
 import Nav from "@/components/Navbar";
 import { Source_Sans_3 } from 'next/font/google'
 import { Montserrat } from "next/font/google";
+import Footer from "@/components/Footer";
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -28,13 +29,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${montserrat.variable}antialiased overflow-x-auto min-w-max`}>
-        <div>
-          <main>
-            <Nav/>
-            {children}
-          </main>
-        </div>
+      <body className={`${montserrat.variable} antialiased flex flex-col min-h-screen`}>
+        <Nav/>
+        <main className="pt-20 md:pt-32 lg:pt-40 flex-1">
+          {children}
+        </main>
+        <Footer/>
       </body>
     </html>
   );
