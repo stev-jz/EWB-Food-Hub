@@ -23,44 +23,49 @@ type Recipe = {
 const recipes: Recipe[] = [
   {
     id: "muffins",
-    title: "Healthy Blueberry Oat Muffins",
-    url: "https://www.tamingtwins.com/healthy-breakfast-muffins/",
-    image: <img src="/recipe-placeholder1.png" alt="muffins picture" className="rounded-md object-cover w-20 h-20 sm:w-24 sm:h-24 lg:w-32 lg:h-32" />,
-    time: "Time: 25 minutes",
+    title: "Title",
+    url: "link to recipe",
+    image: <img src="/recipe-placeholder1.png" alt="muffins picture" className="object-cover w-20 h-20 sm:w-24 sm:h-24 lg:w-32 lg:h-32" />,
+    time: "Time: time",
     minutes: 25,
     priceEstimate: 7.5,
-    dietaryOptions: ["vegan", "gluten-free", "dairy-free"],
-    materialsList: "Mixing bowl, muffin tray, paper liners, oven (190°C).",
-    instructions: "Whisk dry, fold in wet & berries, portion, bake 18–22 min, cool.",
-    difficulty: "Easy",
-    servings: "12 muffins"
+    dietaryOptions: ["vegan", "nut-free", "x"],
+    materialsList: "x, y, z",
+    instructions: "sentence here",
+    difficulty: "difficulty",
+    servings: "servings"
   },
   {
     id: "pasta",
-    title: "Quick & Easy Gluten-Free Pasta",
-    url: "https://thecolorfulkitchen.com/2018/01/18/favorite-quick-easy-weeknight-pasta-vegan-gluten-free/",
-    image: <img src="/recipe-placeholder2.png" alt="pasta picture" className="rounded-md object-cover w-20 h-20 sm:w-24 sm:h-24 lg:w-32 lg:h-32" />,
-    time: "Time: 20 minutes",
+    title: "Title",
+    url: "link to recipe",
+    image: <img src="/recipe-placeholder2.png" alt="pasta picture" className="object-cover w-20 h-20 sm:w-24 sm:h-24 lg:w-32 lg:h-32" />,
+    time: "Time: time",
     minutes: 20,
     priceEstimate: 6,
-    dietaryOptions: ["vegan", "gluten-free"],
-    difficulty: "Easy",
-    servings: "2–3"
+    dietaryOptions: ["vegan", "y"],
+    materialsList: "x, y, z",
+    instructions: "sentence here",
+    difficulty: "difficulty",
+    servings: "servings"
   },
   {
     id: "salad",
-    title: "Viral Cucumber Salad",
-    url: "https://dessertscapital.com/logan-cucumber-salad-recipe/",
-    image: <img src="/recipe-placeholder3.png" alt="salad picture" className="rounded-md object-cover w-20 h-20 sm:w-24 sm:h-24 lg:w-32 lg:h-32" />,
-    time: "Time: 10 minutes",
+    title: "Title",
+    url: "link to recipe",
+    image: <img src="/recipe-placeholder3.png" alt="salad picture" className="object-cover w-20 h-20 sm:w-24 sm:h-24 lg:w-32 lg:h-32" />,
+    time: "Time: time",
     minutes: 10,
     priceEstimate: 3.5,
-    dietaryOptions: ["vegan", "gluten-free", "dairy-free", "nut-free"],
-    servings: "2"
+    dietaryOptions: ["nut-free", "z"],
+    materialsList: "x, y, z",
+    instructions: "sentence here",
+    difficulty: "difficulty",
+    servings: "servings"
   },
 ];
 
-const ALL_DIETARY = ["vegan", "gluten-free", "dairy-free", "nut-free", "low-sodium"] as const;
+const ALL_DIETARY = ["vegan", "nut-free", "x", "y", "z"] as const;
 
 export default function Recipes() {
   const [q, setQ] = useState('');
@@ -80,12 +85,7 @@ export default function Recipes() {
       return next;
     });
 
-  const resetFilters = () => {
-    setQ('');
-    setPriceFilter("all");
-    setTimeFilter("all");
-    setDietary(new Set());
-  };
+
 
   const norm = (s?: string) => (s || '').toLowerCase().trim();
 
@@ -132,7 +132,7 @@ export default function Recipes() {
             id="recipe-search"
             value={q}
             onChange={(e) => setQ(e.target.value)}
-            placeholder="Search by title, materials, instructions…"
+            placeholder="Search"
             className="w-full rounded-md border border-black/10 px-3 py-2 text-sm sm:text-base outline-none focus:ring-2 focus:ring-blue-500/60"
           />
         </div>
@@ -148,8 +148,7 @@ export default function Recipes() {
           </button>
 
           <div
-            className={`overflow-hidden transition-[grid-template-rows,opacity] duration-300 ${filtersOpen ? 'opacity-100' : 'opacity-0'}`}
-            style={{ display: 'grid', gridTemplateRows: filtersOpen ? '1fr' : '0fr' }}
+            className={`${filtersOpen ? 'block' : 'hidden'}`}
           >
             <div className="min-h-0 mt-3 space-y-4">
               {/* Price buttons */}
@@ -161,7 +160,7 @@ export default function Recipes() {
                       key={opt}
                       onClick={() => setPriceFilter(opt as typeof priceFilter)}
                       className={`px-3 py-1 rounded-md border text-sm cursor-pointer ${
-                        priceFilter === opt ? "bg-blue-500 text-white" : "bg-white border-black/20 hover:bg-black/5"
+                        priceFilter === opt ? "bg-blue-900 text-white" : "bg-white border-black/20 hover:bg-black/5"
                       }`}
                     >
                       {opt === "all" ? "All" : opt === "<20" ? "< $20" : "≥ $20"}
@@ -179,7 +178,7 @@ export default function Recipes() {
                       key={opt}
                       onClick={() => setTimeFilter(opt as typeof timeFilter)}
                       className={`px-3 py-1 rounded-md border text-sm cursor-pointer ${
-                        timeFilter === opt ? "bg-blue-500 text-white" : "bg-white border-black/20 hover:bg-black/5"
+                        timeFilter === opt ? "bg-blue-900 text-white" : "bg-white border-black/20 hover:bg-black/5"
                       }`}
                     >
                       {opt === "all" ? "All" : opt === "<30" ? "< 30 min" : "≥ 30 min"}
@@ -211,21 +210,12 @@ export default function Recipes() {
                 </div>
               </div>
 
-              {/* Reset */}
-              <div className="flex justify-end">
-                <button
-                  onClick={resetFilters}
-                  className="text-sm px-3 py-1.5 rounded-md border border-black/10 hover:bg-black/5 cursor-pointer"
-                >
-                  Reset filters
-                </button>
-              </div>
+
             </div>
           </div>
         </div>
 
-        {/* Results */}
-        <p className="mt-3 text-xs opacity-70">{filtered.length} result{filtered.length !== 1 ? 's' : ''}</p>
+
 
         <ul className="mt-4 space-y-6 lg:space-y-10">
           {filtered.map((recipe) => {
@@ -268,8 +258,7 @@ export default function Recipes() {
                     </button>
 
                     <div
-                      className={`overflow-hidden transition-[grid-template-rows,opacity] duration-300 ${isOpen ? 'opacity-100' : 'opacity-0'}`}
-                      style={{ display: 'grid', gridTemplateRows: isOpen ? '1fr' : '0fr' }}
+                      className={`${isOpen ? 'block' : 'hidden'}`}
                     >
                       <div className="min-h-0">
                         <ul className="mt-2 space-y-1.5 text-sm sm:text-base lg:text-lg">
