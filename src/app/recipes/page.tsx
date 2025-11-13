@@ -25,8 +25,8 @@ const recipes: Recipe[] = [
     id: "muffins",
     title: "Title",
     url: "link to recipe",
-    image: <img src="/recipe-placeholder1.png" alt="muffins picture" className="object-cover w-20 h-20 sm:w-24 sm:h-24 lg:w-32 lg:h-32" />,
-    time: "Time: time",
+    image: <img src="/recipe-placeholder1.png" alt="muffins picture" className="object-cover w-20 h-20 sm:w-24 sm:h-24 lg:w-32 lg:h-32 rounded-lg" />,
+    time: "30mins",
     minutes: 25,
     priceEstimate: 7.5,
     dietaryOptions: ["vegan", "nut-free", "x"],
@@ -39,8 +39,8 @@ const recipes: Recipe[] = [
     id: "pasta",
     title: "Title",
     url: "link to recipe",
-    image: <img src="/recipe-placeholder2.png" alt="pasta picture" className="object-cover w-20 h-20 sm:w-24 sm:h-24 lg:w-32 lg:h-32" />,
-    time: "Time: time",
+    image: <img src="/recipe-placeholder2.png" alt="pasta picture" className="object-cover w-20 h-20 sm:w-24 sm:h-24 lg:w-32 lg:h-32 rounded-lg" />,
+    time: "30mins",
     minutes: 20,
     priceEstimate: 6,
     dietaryOptions: ["vegan", "y"],
@@ -53,8 +53,8 @@ const recipes: Recipe[] = [
     id: "salad",
     title: "Title",
     url: "link to recipe",
-    image: <img src="/recipe-placeholder3.png" alt="salad picture" className="object-cover w-20 h-20 sm:w-24 sm:h-24 lg:w-32 lg:h-32" />,
-    time: "Time: time",
+    image: <img src="/recipe-placeholder3.png" alt="salad picture" className="object-cover w-20 h-20 sm:w-24 sm:h-24 lg:w-32 lg:h-32 rounded-lg" />,
+    time: "30mins",
     minutes: 10,
     priceEstimate: 3.5,
     dietaryOptions: ["nut-free", "z"],
@@ -122,7 +122,7 @@ export default function Recipes() {
   return (
     <section className="min-h-[80vh] w-full">
       <div className="mx-auto w-full max-w-[760px] px-5 sm:px-6 md:px-8 py-10">
-        <h1 className="font-semibold tracking-tight text-[clamp(24px,6vw,44px)]">
+        <h1 className="font-semibold tracking-tight text-[clamp(20px,5vw,32px)]">
           Featured Recipes
         </h1>
 
@@ -217,7 +217,7 @@ export default function Recipes() {
 
 
 
-        <ul className="mt-4 space-y-6 lg:space-y-10">
+        <ul className="mt-4 space-y-2">
           {filtered.map((recipe) => {
             const details = [
               { label: "Materials:", value: recipe.materialsList },
@@ -230,14 +230,14 @@ export default function Recipes() {
             const isOpen = openId === recipe.id;
 
             return (
-              <li key={recipe.id} className="py-1 border-b border-black/5">
+              <li key={recipe.id} className="border border-gray-300 rounded-lg p-4">
                 <div className="grid grid-cols-[84px_1fr] gap-4 items-start sm:grid-cols-[96px_1fr] lg:grid-cols-[128px_1fr] lg:gap-8">
                   {recipe.image}
                   <div className="flex flex-col gap-1 sm:gap-1.5 lg:gap-2">
                     <h3 className="font-semibold text-base sm:text-lg lg:text-2xl leading-tight">
                       {recipe.title}
                     </h3>
-                    <p className="text-sm sm:text-base lg:text-lg opacity-80">{recipe.time}</p>
+                    <p className="text-sm sm:text-base lg:text-lg text-blue-900">{recipe.time}</p>
 
                     <a
                       href={recipe.url}

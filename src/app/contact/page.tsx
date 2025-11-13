@@ -20,7 +20,7 @@ export default function Contact(){
                             <input
                                 type="text"
                                 placeholder="Type..."
-                                className="w-full px-3 py-2 border-2 border-black bg-white text-black"
+                                className="w-full px-3 py-2 border-2 border-black bg-white text-black rounded"
                             />
                         </div>
                         <div className="flex-1">
@@ -28,14 +28,14 @@ export default function Contact(){
                             <input
                                 type="email"
                                 placeholder="Type..."
-                                className="w-full px-3 py-2 border-2 border-black bg-white text-black"
+                                className="w-full px-3 py-2 border-2 border-black bg-white text-black rounded"
                             />
                         </div>
                     </div>
 
                     <div>
                         <label className="block text-black mb-2">Content Type</label>
-                        <select className="w-full px-3 py-2 border-2 border-black bg-white text-black">
+                        <select className="w-full px-3 py-2 border-2 border-black bg-white text-black rounded">
                             <option value="">Select...</option>
                             <option value="recipe">Recipe</option>
                             <option value="article">Article</option>
@@ -52,7 +52,7 @@ export default function Contact(){
                         <label className="block text-black mb-2">Upload File</label>
                         <input
                             type="file"
-                            className="w-full px-3 py-2 border-2 border-black bg-white text-black"
+                            className="w-full px-3 py-2 border-2 border-black bg-white text-black rounded"
                         />
                     </div>
 
@@ -61,14 +61,14 @@ export default function Contact(){
                         <textarea
                             rows={6}
                             placeholder="Type..."
-                            className="w-full px-3 py-2 border-2 border-black bg-white text-black resize-none"
+                            className="w-full px-3 py-2 border-2 border-black bg-white text-black resize-none rounded"
                         ></textarea>
                     </div>
 
                     <div className="flex justify-end">
                         <button
                             type="submit"
-                            className="px-8 py-3 bg-blue-900 text-white font-medium border-2 border-blue-900"
+                            className="px-8 py-3 bg-blue-900 text-white font-medium border-2 border-blue-900 rounded"
                         >
                             Send
                         </button>

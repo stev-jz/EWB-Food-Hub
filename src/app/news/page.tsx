@@ -85,7 +85,7 @@ export default function News() {
   return (
     <section className="min-h-[80vh] w-full">
       <div className="mx-auto w-full max-w-[900px] px-5 sm:px-6 md:px-8 py-10">
-        <h1 className="font-semibold tracking-tight text-[clamp(24px,6vw,44px)]">
+        <h1 className="font-semibold tracking-tight text-[clamp(20px,5vw,32px)]">
           News
         </h1>
         <p className="text-black mt-1 text-sm sm:text-base">
@@ -110,45 +110,32 @@ export default function News() {
           </select>
         </div>
 
-        <div className="space-y-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {filteredNews.length === 0 ? (
-            <p className="text-gray-500 text-center py-8">
+            <p className="text-gray-500 text-center py-8 col-span-2">
               No items found for the selected category.
             </p>
           ) : (
-                         filteredNews.map((item, index) => (
-               <div key={item.id}>
-                 <Link href={item.url} className="block group cursor-pointer">
-                   <div className="py-6 flex gap-4">
-                     <div className="w-32 h-32 flex-shrink-0">
-                       <img 
-                         src="/news image placeholder.jpg" 
-                         alt="news placeholder" 
-                         className="w-full h-full object-cover"
-                       />
-                     </div>
-                     
-                     <div className="flex-1">
-                       <h3 className="text-xl font-semibold text-gray-900 mb-2 group-hover:underline transition-all">
-                         {item.title}
-                       </h3>
-                       
-                       <span className="inline-block px-3 py-1 rounded text-xs font-medium bg-gray-200 text-black mb-3">
-                         {categoryLabels[item.category as keyof typeof categoryLabels]}
-                       </span>
-                       
-                       <p className="text-gray-600 mb-3">{item.summary}</p>
-                       
-                       <p className="text-sm text-black">
-                         <strong>Tags:</strong> location, time, event type, organization
-                       </p>
-                     </div>
-                   </div>
-                 </Link>
-                 {index < filteredNews.length - 1 && (
-                   <hr className="border-black" />
-                 )}
-               </div>
+            filteredNews.map((item) => (
+              <Link key={item.id} href={item.url} className="block group cursor-pointer">
+                <div className="flex flex-col">
+                  <div className="w-full aspect-[4/3] mb-3 border-2 border-black flex items-center justify-center">
+                    <span className="text-black text-xl">Image</span>
+                  </div>
+                  
+                  <div>
+                    <h3 className="text-xl font-semibold text-gray-900 mb-2 group-hover:underline transition-all">
+                      {item.title}
+                    </h3>
+                    
+                    <p className="text-gray-600 mb-2">{item.summary}</p>
+                    
+                    <p className="text-sm text-black">
+                      <strong>Tags:</strong> location, time, event type, organization
+                    </p>
+                  </div>
+                </div>
+              </Link>
             ))
           )}
         </div>

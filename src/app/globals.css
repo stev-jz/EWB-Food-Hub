@@ -30,6 +30,17 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-montserrat), Helvetica, sans-serif;
+  letter-spacing: -0.015em;
+}
+
+/* Apply tighter tracking to ALL elements */
+* {
+  letter-spacing: -0.015em;
+}
+
+/* Ensure nav elements keep their original tracking */
+nav, nav * {
+  letter-spacing: normal !important;
 }
 
 nav a:hover {

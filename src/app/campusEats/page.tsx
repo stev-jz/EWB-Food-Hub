@@ -1,11 +1,11 @@
-import { useLoadScript } from "@react-google-maps/api"
+import MapView from "@/components/MapView";
 
 export default function CampusEats(){
     
     return (
         <div className="pt-[4vh] min-h-[80vh] w-full flex justify-center">
-            <div className="flex w-[90%] md:w-[55%] flex-col items-center">
-                <p className="font-semibold text-[5vw] max-lg::text-[3vw] lg:text-[2vw]">
+            <div className="flex w-[90%] md:w-[80%] flex-col items-center">
+                <p className="font-semibold text-[6vw] max-lg::text-[4vw] lg:text-[2.5vw]">
                   Food at UofT
                 </p>
 
@@ -13,6 +13,9 @@ export default function CampusEats(){
                   UofT offers a large range of food options. From dining halls to food courts to coffee spots, 
                   there is something for everyone.
                 </p>
+                <div className="w-full mt-6 rounded-lg overflow-hidden shadow-lg">
+                    <MapView />
+                </div>
             </div>
         </div>
     )

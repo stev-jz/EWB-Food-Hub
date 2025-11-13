@@ -34,9 +34,9 @@ export default function Nav(){
               <Link className="pt-3 px-4 md:px-12 lg:px-20 flex items-center" href="/">
                   <Image src="/EWB-White.png" alt="EWB logo" width={80} height={23} className="md:w-32 lg:w-40 xl:w-48" priority/>
                   <div className="w-[1px] md:w-[2px] h-10 md:h-16 lg:h-20 bg-gray-300 mx-2 md:mx-3 lg:mx-5"/>
-                  <p className="tracking-tight text-lg md:text-2xl lg:text-3xl xl:text-[4.5vh] font-semibold text-white">UofT Food Resource Hub</p>
+                  <p className="tracking-tight text-lg md:text-2xl lg:text-2xl xl:text-3xl font-semibold text-white whitespace-nowrap">UofT Food Resource Hub</p>
               </Link>
-              <ul className="pt-3 pr-[7vw] hidden xl:flex flex-nowrap gap-[30px] min-w-max">
+              <ul className="pt-3 pr-[3vw] hidden xl:flex flex-nowrap gap-[25px] min-w-max">
                   {navItems.map((item) => (
                       <li 
                         key={item.href} 
