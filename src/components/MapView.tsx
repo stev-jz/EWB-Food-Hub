@@ -142,7 +142,7 @@ export default function MapView() {
 
     const toggleFilter = (category: keyof Filters, value: string | number) => {
         setFilters(prev => {
-            const current = prev[category] as any[]
+            const current = prev[category] as (string | number)[]
             return { ...prev, [category]: current.includes(value) ? current.filter(item => item !== value) : [...current, value] }
         })
     }
@@ -177,9 +177,9 @@ export default function MapView() {
             <div className="mb-4">
                 <div className="text-sm font-medium text-black mb-2">Filters</div>
                 <div className="flex flex-wrap gap-2">
-                    <FilterDropdown category="types" label="Place Type" options={PLACE_TYPES} displayTransform={(val) => val.replace('-', ' ')} isOpen={openDropdown === 'types'} filters={filters} onToggle={toggleFilter} onToggleDropdown={toggleDropdown} />
-                    <FilterDropdown category="dietary" label="Dietary" options={DIETARY_OPTIONS} displayTransform={(val) => val.replace('-', ' ')} isOpen={openDropdown === 'dietary'} filters={filters} onToggle={toggleFilter} onToggleDropdown={toggleDropdown} />
-                    <FilterDropdown category="nearBuildings" label="Within 200m of" options={BUILDINGS} displayTransform={(val) => val.replace('-', ' ')} isOpen={openDropdown === 'nearBuildings'} filters={filters} onToggle={toggleFilter} onToggleDropdown={toggleDropdown} />
+                    <FilterDropdown category="types" label="Place Type" options={PLACE_TYPES} displayTransform={(val) => String(val).replace('-', ' ')} isOpen={openDropdown === 'types'} filters={filters} onToggle={toggleFilter} onToggleDropdown={toggleDropdown} />
+                    <FilterDropdown category="dietary" label="Dietary" options={DIETARY_OPTIONS} displayTransform={(val) => String(val).replace('-', ' ')} isOpen={openDropdown === 'dietary'} filters={filters} onToggle={toggleFilter} onToggleDropdown={toggleDropdown} />
+                    <FilterDropdown category="nearBuildings" label="Within 200m of" options={BUILDINGS} displayTransform={(val) => String(val).replace('-', ' ')} isOpen={openDropdown === 'nearBuildings'} filters={filters} onToggle={toggleFilter} onToggleDropdown={toggleDropdown} />
                 </div>
             </div>
 

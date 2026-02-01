@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Nav from "@/components/Navbar";
-import { Source_Sans_3 } from 'next/font/google'
 import { Montserrat } from "next/font/google";
 import Footer from "@/components/Footer";
 
@@ -10,12 +9,6 @@ const montserrat = Montserrat({
   weight: ['400', '600', '700'],
   variable: '--font-montserrat',
 });
-
-const sourceSans3 = Source_Sans_3({
-  subsets: ['latin'],
-  weight: ['400', '600', '700'],
-  variable: '--font-source-sans-3',
-})
 
 export const metadata: Metadata = {
   title: "Food Resource Hub | EWB UofT",
@@ -30,11 +23,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${montserrat.variable} antialiased flex flex-col min-h-screen`}>
-        <Nav/>
+        <Nav />
         <main className="pt-20 md:pt-32 lg:pt-40 flex-1">
           {children}
         </main>
-        <Footer/>
+        <Footer />
       </body>
     </html>
   );

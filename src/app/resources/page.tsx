@@ -1,7 +1,7 @@
 
 import Link from "next/link";
 
-export default function Resources(){
+export default function Resources() {
     return (
         <section className="min-h-[80vh] w-full">
             <div className="mx-auto w-full max-w-[900px] px-5 sm:px-6 md:px-8 py-10">
@@ -9,7 +9,7 @@ export default function Resources(){
                     Food Resources
                 </h1>
                 <p className="opacity-80 mt-1 text-sm sm:text-base mb-8">
-                    Choose the type of resources you're looking for:
+                    Choose the type of resources you&apos;re looking for:
                 </p>
 
                 <div className="grid lg:grid-cols-2 gap-8">
@@ -57,7 +57,7 @@ export default function Resources(){
                 <div className="mt-12 bg-orange-50 border border-orange-200 rounded-lg p-6">
                     <h3 className="text-lg font-semibold text-orange-900 mb-2">Need Help Choosing?</h3>
                     <p className="text-orange-800 text-sm">
-                        If you're a UofT student, start with <strong>UofT Resources</strong> for campus-specific support. 
+                        If you&apos;re a UofT student, start with <strong>UofT Resources</strong> for campus-specific support.
                         For broader community support or if you need additional help, check out <strong>Community-Wide Resources</strong>.
                     </p>
                 </div>

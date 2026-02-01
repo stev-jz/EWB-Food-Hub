@@ -83,11 +83,7 @@ export default function Recipes() {
       const next = new Set(prev);
       next.has(d) ? next.delete(d) : next.add(d);
       return next;
-    });
-
-
-
-  const norm = (s?: string) => (s || '').toLowerCase().trim();
+    }); const norm = (s?: string) => (s || '').toLowerCase().trim();
 
   const filtered = useMemo(() => {
     const query = norm(q);
@@ -101,14 +97,14 @@ export default function Recipes() {
       // price filter
       const pricePass =
         priceFilter === "all" ? true :
-        r.priceEstimate == null ? true :
-        priceFilter === "<20" ? r.priceEstimate < 20 : r.priceEstimate >= 20;
+          r.priceEstimate == null ? true :
+            priceFilter === "<20" ? r.priceEstimate < 20 : r.priceEstimate >= 20;
 
       // time filter
       const timePass =
         timeFilter === "all" ? true :
-        r.minutes == null ? true :
-        timeFilter === "<30" ? r.minutes < 30 : r.minutes >= 30;
+          r.minutes == null ? true :
+            timeFilter === "<30" ? r.minutes < 30 : r.minutes >= 30;
 
       // dietary filter
       const dietPass =
@@ -144,7 +140,7 @@ export default function Recipes() {
             className="inline-flex items-center gap-2 text-sm sm:text-base underline-offset-4 hover:underline cursor-pointer"
           >
             Filters
-            <svg className={`h-4 w-4 transition-transform duration-300 ${filtersOpen ? 'rotate-180' : ''}`} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M6 9l6 6 6-6"/></svg>
+            <svg className={`h-4 w-4 transition-transform duration-300 ${filtersOpen ? 'rotate-180' : ''}`} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M6 9l6 6 6-6" /></svg>
           </button>
 
           <div
@@ -155,13 +151,12 @@ export default function Recipes() {
               <div>
                 <p className="text-sm font-semibold mb-1">Price</p>
                 <div className="flex gap-2 flex-wrap">
-                  {["all","<20",">=20"].map(opt => (
+                  {["all", "<20", ">=20"].map(opt => (
                     <button
                       key={opt}
                       onClick={() => setPriceFilter(opt as typeof priceFilter)}
-                      className={`px-3 py-1 rounded-md border text-sm cursor-pointer ${
-                        priceFilter === opt ? "bg-blue-900 text-white" : "bg-white border-black/20 hover:bg-black/5"
-                      }`}
+                      className={`px-3 py-1 rounded-md border text-sm cursor-pointer ${priceFilter === opt ? "bg-blue-900 text-white" : "bg-white border-black/20 hover:bg-black/5"
+                        }`}
                     >
                       {opt === "all" ? "All" : opt === "<20" ? "< $20" : "≥ $20"}
                     </button>
@@ -173,13 +168,12 @@ export default function Recipes() {
               <div>
                 <p className="text-sm font-semibold mb-1">Time</p>
                 <div className="flex gap-2 flex-wrap">
-                  {["all","<30",">=30"].map(opt => (
+                  {["all", "<30", ">=30"].map(opt => (
                     <button
                       key={opt}
                       onClick={() => setTimeFilter(opt as typeof timeFilter)}
-                      className={`px-3 py-1 rounded-md border text-sm cursor-pointer ${
-                        timeFilter === opt ? "bg-blue-900 text-white" : "bg-white border-black/20 hover:bg-black/5"
-                      }`}
+                      className={`px-3 py-1 rounded-md border text-sm cursor-pointer ${timeFilter === opt ? "bg-blue-900 text-white" : "bg-white border-black/20 hover:bg-black/5"
+                        }`}
                     >
                       {opt === "all" ? "All" : opt === "<30" ? "< 30 min" : "≥ 30 min"}
                     </button>
@@ -254,7 +248,7 @@ export default function Recipes() {
                       className="mt-2 inline-flex items-center gap-1 text-sm sm:text-base lg:text-lg opacity-90 hover:opacity-100 transition duration-300 cursor-pointer"
                     >
                       <span>{isOpen ? "Collapse recipe" : "Expand recipe"}</span>
-                      <svg className={`h-4 w-4 sm:h-5 sm:w-5 transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M6 9l6 6 6-6"/></svg>
+                      <svg className={`h-4 w-4 sm:h-5 sm:w-5 transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M6 9l6 6 6-6" /></svg>
                     </button>
 
                     <div

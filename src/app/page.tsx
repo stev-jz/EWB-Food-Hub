@@ -1,10 +1,10 @@
-import Image from "next/image";
+
 
 export default function Home() {
   return (
     <div className="bg-white py-8 lg:py-[30px] flex items-center justify-center">
       <div className="bg-[#002A5C] mx-4 lg:mx-auto lg:container flex flex-col lg:flex-row items-center px-6 lg:px-16 py-8 lg:py-16 rounded-lg">
-        
+
         <div className="flex-1 text-white space-y-6 text-center lg:text-left">
           <h1 className="text-2xl max-lg:text-3xl lg:text-6xl tracking-tight font-semibold leading-tight">
             Welcome to EWB <br /> Food Resource Hub
