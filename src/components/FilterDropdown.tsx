@@ -28,7 +28,7 @@ export default function FilterDropdown({
         <div className="relative">
             <button
                 onClick={() => onToggleDropdown(category)}
-                className={`flex items-center gap-1.5 px-2 py-1 text-xs border border-black rounded transition-colors cursor-pointer ${activeCount > 0
+                className={`flex items-center gap-1.5 px-2 py-1 text-xs border border-black rounded transition-colors cursor-pointer ${count > 0
                     ? 'bg-blue-900 text-white border-blue-900'
                     : 'bg-white text-black border-black hover:bg-gray-100'
                     }`}
