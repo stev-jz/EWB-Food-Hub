@@ -66,6 +66,7 @@ export default function MapView() {
 
     useEffect(()=> { //takes in nothing, does whatever is below
         fetch('/locations.json').then( res => res.json()).then(data => {
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
             const mappedLocations = data.map((loc :any) => ({
                 id: loc.id,
                 name: loc.name,
