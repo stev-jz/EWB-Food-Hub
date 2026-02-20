@@ -2,7 +2,7 @@
 import { useEffect, useMemo, useState } from "react"
 import { useLoadScript, GoogleMap, Marker, InfoWindow } from "@react-google-maps/api"
 import { Location, Filters } from './types'
-import { PLACE_TYPES, DIETARY_OPTIONS, BUILDINGS, SAMPLE_LOCATIONS, BUILDING_COORDINATES } from './constants'
+import { PLACE_TYPES, DIETARY_OPTIONS, BUILDINGS, BUILDING_COORDINATES } from './constants'
 import FilterDropdown from './FilterDropdown'
 import LocationInfoWindow from './LocationInfoWindow'
 
@@ -45,6 +45,7 @@ export default function MapView() {
     const mapsKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY ?? ""
     const { isLoaded, loadError } = useLoadScript({ googleMapsApiKey: mapsKey })
 
+    const [locations, setLocations] = useState<Location[]>([])
     const [selectedLocation, setSelectedLocation] = useState<Location | null>(null)
     const [filters, setFilters] = useState<Filters>({
         types: [], dietary: [], nearBuildings: []
@@ -55,17 +56,43 @@ export default function MapView() {
     const [userLocation, setUserLocation] = useState<{ lat: number, lng: number } | null>(null)
 
     const filteredLocations = useMemo(() =>
-        SAMPLE_LOCATIONS.filter(location => {
+        locations.filter(location => {
             if (filters.types.length > 0 && !filters.types.some(type => location.type.includes(type))) return false
             if (filters.dietary.length > 0 && !filters.dietary.some(dietary => location.dietary.includes(dietary))) return false
             if (filters.nearBuildings.length > 0 && !isNearby(location, filters.nearBuildings)) return false
             return true
-        }), [filters]
+        }), [filters, locations]
     )
+
+    useEffect(()=> { //takes in nothing, does whatever is below
+        fetch('/locations.json').then( res => res.json()).then(data => {
+            const mappedLocations = data.map((loc :any) => ({
+                id: loc.id,
+                name: loc.name,
+                address: loc.address,
+                position: { lat: loc.lat, lng: loc.lng },
+                type: loc.type ? loc.type.toLowerCase().split(',').map((s: string) => s.trim()) : [],
+                dietary: [],
+                nearBuildings: [],
+                website: loc.url || ''
+                })
+            )
+            setLocations(mappedLocations)
+        })
+        }, [])
 
     // Get User Location & Calculate Distances
     useEffect(() => {
         if (!isLoaded) return
+        if (locations.length === 0) return
+        // Helper to chunk an array into batches
+        const chunkArray = <T,>(arr: T[], size: number): T[][] => {
+            const chunks: T[][] = []
+            for (let i = 0; i < arr.length; i += size) {
+                chunks.push(arr.slice(i, i + size))
+            }
+            return chunks
+}
 
         // 1. Get User Location
         if (navigator.geolocation) {
@@ -93,36 +120,52 @@ export default function MapView() {
                         }
                     }
 
-                    // 2. Calculate Distances (API Call)
+                    // 2. Calculate Distances in batches of 25
                     console.log("Fetching new distances from API...")
                     const service = new google.maps.DistanceMatrixService()
-                    service.getDistanceMatrix(
-                        {
-                            origins: [userPos],
-                            destinations: SAMPLE_LOCATIONS.map(loc => loc.position),
-                            travelMode: google.maps.TravelMode.WALKING,
-                        },
-                        (response, status) => {
-                            if (status === 'OK' && response) {
-                                console.log("Distance Matrix success")
-                                const newDistances: Record<number, string> = {}
-                                response.rows[0].elements.forEach((element, index) => {
-                                    if (element.status === 'OK') {
-                                        newDistances[SAMPLE_LOCATIONS[index].id] = element.duration.text
-                                    }
-                                })
-                                setDistances(newDistances)
+                    const locationBatches = chunkArray(locations, 25)
+                    const newDistances: Record<number, string> = {}
 
-                                // Save to Cache
-                                sessionStorage.setItem('food-hub-distances', JSON.stringify({
-                                    userPos: userPos,
-                                    distances: newDistances
-                                }))
-                            } else {
-                                console.error("Distance Matrix failed:", status)
-                            }
+                    const processBatch = (batchIndex: number) => {
+                        if (batchIndex >= locationBatches.length) {
+                            // All batches done - save and set
+                            setDistances(newDistances)
+                            sessionStorage.setItem('food-hub-distances', JSON.stringify({
+                                userPos,
+                                distances: newDistances
+                            }))
+                            return
                         }
-                    )
+
+                        const batch = locationBatches[batchIndex]
+                        const batchStartIndex = batchIndex * 25
+
+                        service.getDistanceMatrix(
+                            {
+                                origins: [userPos],
+                                destinations: batch.map(loc => loc.position),
+                                travelMode: google.maps.TravelMode.WALKING,
+                            },
+                            (response, status) => {
+                                if (status === 'OK' && response) {
+                                    response.rows[0].elements.forEach((element, index) => {
+                                        if (element.status === 'OK') {
+                                            const locationIndex = batchStartIndex + index
+                                            newDistances[locations[locationIndex].id] = element.duration.text
+                                        }
+                                    })
+                                    // Process next batch after a small delay to avoid rate limiting
+                                    setTimeout(() => processBatch(batchIndex + 1), 200)
+                                } else {
+                                    console.error(`Distance Matrix batch ${batchIndex} failed:`, status)
+                                    // Still try next batch even if one fails
+                                    setTimeout(() => processBatch(batchIndex + 1), 200)
+                                }
+                            }
+                        )
+                    }
+
+                    processBatch(0)
                 },
                 (error) => {
                     console.error("Geolocation error:", error)
@@ -131,7 +174,7 @@ export default function MapView() {
         } else {
             console.error("Geolocation not supported")
         }
-    }, [isLoaded])
+    }, [isLoaded, locations])
 
     // Pan to user location when found
     useEffect(() => {
@@ -139,6 +182,26 @@ export default function MapView() {
             map.panTo(userLocation)
         }
     }, [userLocation, map])
+    useEffect(() => {
+    if (userLocation && selectedLocation && !distances[selectedLocation.id]) {
+        const service = new google.maps.DistanceMatrixService()
+        service.getDistanceMatrix(
+            {
+                origins: [userLocation],
+                destinations: [selectedLocation.position],
+                travelMode: google.maps.TravelMode.WALKING,
+            },
+            (response, status) => {
+                if (status === 'OK' && response?.rows[0].elements[0].status === 'OK') {
+                    setDistances(prev => ({
+                        ...prev,
+                        [selectedLocation.id]: response.rows[0].elements[0].duration.text
+                    }))
+                }
+            }
+        )
+    }
+}, [userLocation, selectedLocation, distances])
 
     const toggleFilter = (category: keyof Filters, value: string | number) => {
         setFilters(prev => {
@@ -230,26 +293,39 @@ export default function MapView() {
                 <div className="w-80 h-[600px] overflow-y-auto pl-6">
                     <h2 className="text-2xl font-semibold mb-6 text-black sticky top-0 bg-white pb-3">All Locations</h2>
                     <div className="space-y-6">
-                        {SAMPLE_LOCATIONS.map((location) => (
-                            <div key={location.id}>
-                                <button
-                                    onClick={() => handleLocationClick(location)}
-                                    className="text-left hover:text-blue-600 cursor-pointer w-full"
-                                >
-                                    <h3 className="text-lg font-semibold text-black flex justify-between">
-                                        {location.name}
-                                    </h3>
-                                </button>
-                                <div className="flex items-center justify-between mt-1">
-                                    <p className="text-gray-600 text-sm truncate w-2/3">{location.address}</p>
-                                    {distances[location.id] && (
-                                        <span className="text-xs font-bold text-blue-600 bg-blue-50 px-2 py-1 rounded-full whitespace-nowrap">
-                                            {distances[location.id]}
-                                        </span>
-                                    )}
-                                </div>
+                    {locations.map((location) => (
+                        <div key={location.id}>
+                            <button
+                                onClick={() => handleLocationClick(location)}
+                                className="text-left hover:text-blue-600 cursor-pointer w-full"
+                            >
+                                {/* dangerouslySetInnerHTML forces React to render special characters like &#8217; properly */}
+                                <h3 
+                                    className="text-lg font-semibold text-black"
+                                    dangerouslySetInnerHTML={{ __html: location.name }}
+                                />
+                            </button>
+                            
+                            {/* Changed to flex-col to stack the address and the button vertically */}
+                            <div className="flex flex-col items-start mt-1 gap-2">
+                                <p className="text-gray-600 text-sm truncate w-full">{location.address}</p>
+                                
+                                {/* If we have the distance, show it. If not, show the button! */}
+                                {distances[location.id] ? (
+                                    <span className="text-xs font-bold text-blue-600 bg-blue-50 px-2 py-1 rounded-full whitespace-nowrap border border-blue-100">
+                                        🚶 {distances[location.id]}
+                                    </span>
+                                ) : (
+                                    <button
+                                        onClick={() => handleLocationClick(location)}
+                                        className="text-[10px] font-medium text-gray-500 bg-gray-100 hover:bg-gray-200 px-2 py-1 rounded-full whitespace-nowrap border border-gray-200 transition-colors cursor-pointer"
+                                    >
+                                        📍 Click for walk time
+                                    </button>
+                                )}
                             </div>
-                        ))}
+                        </div>
+                    ))}
                     </div>
                 </div>
             </div>

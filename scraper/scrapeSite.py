@@ -57,6 +57,11 @@ def parseFoodType(foodHTML):
 
 # fetch food locaiton info from the uoft API
 
+# decode html entities like &amp for &
+def decodeHTML(text: str) -> str:
+    from html import unescape
+    return unescape(text) if text else ""
+
 print("Fetching locations from UofT Food Services API")
 response = httpx.get(URL, params=PARAMS, headers=HEADERS, timeout=15, verify=False)
 response.raise_for_status() # see if there is an error "404", etc
@@ -67,7 +72,7 @@ locations = []
 for loc in rawLocations:
     locations.append({
         "id": loc.get("id"),
-        "name":loc.get("store"),
+        "name": decodeHTML(loc.get("store") or ""),
         "address": f"{loc.get('address')}, {loc.get('city')}, {loc.get('state')}".strip(", "),
         "lat": float(loc.get("lat", 0)),
         "lng": float(loc.get("lng", 0)),
