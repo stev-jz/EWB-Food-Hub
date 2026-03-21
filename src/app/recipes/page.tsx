@@ -63,6 +63,20 @@ const recipes: Recipe[] = [
     difficulty: "Easy",
     servings: "1"
   },
+  {
+    id: "flourless-pb-cookies",
+    title: "Flourless Peanut Butter Cookies",
+    url: "https://www.budgetbytes.com/flourless-peanut-butter-cookies/",
+    image: <img src="/pb-cookies.webp" alt="Flourless Peanut Butter Cookies picture" className="object-cover w-20 h-20 sm:w-24 sm:h-24 lg:w-32 lg:h-32 rounded-lg" />,
+    time: "27 minutes",
+    minutes: 27,
+    priceEstimate: 1.65,
+    dietaryOptions: ["y", "z"],
+    materialsList: "1 cup natural peanut butter, 3/4 cup granulated sugar, 2/3 cup powdered sugar, 1 large egg, 1/2 tsp vanilla extract, 1/2 tsp baking powder",
+    instructions: "1. Preheat the oven to 350ºF. Add all of the ingredients to a bowl and stir until it forms a cohesive dough. It should be firm enough to pull away from the sides of the bowl. If the dough is still too soft, add a tablespoon or two more of powdered sugar to further firm up the dough.\n2. Divide the cookie dough into twelve pieces. Roll each piece into a ball then flatten it slightly. Place the cookies on a parchment-lined baking sheet and then use a fork to create a cross hatch pattern on the top of the cookie.\n3. Bake the cookies for 12 minutes in the preheated oven. After baking, allow them to cool for about five minutes on the baking sheet, or until they're firm enough to lift with a spatula.\n4. Transfer the cookies to a wire rack to cool completely, then serve and enjoy.",
+    difficulty: "Easy",
+    servings: "12"
+  },
 ];
 
 const ALL_DIETARY = ["vegan", "nut-free", "x", "y", "z"] as const;
