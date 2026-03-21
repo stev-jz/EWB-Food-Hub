@@ -12,10 +12,7 @@ export default function About() {
                     <div className="order-1 lg:order-2">
                         <h2 className="text-3xl font-semibold mb-4">About EWB and Community Projects</h2>
                         <p className="text-lg leading-relaxed">
-                            Engineers Without Borders (EWB) at the University of Toronto etc...<br />
-                            etc...<br />
-                            etc...<br />
-                            etc...
+                            Engineers Without Borders (EWB) is a community of changemakers across various fields of study who are passionate about creating system-based solutions that address the root causes of issues in our university, local, and global communities.
                         </p>
                     </div>
                 </div>
@@ -25,10 +22,7 @@ export default function About() {
                     <div>
                         <h2 className="text-3xl font-semibold mb-4">Our Projects</h2>
                         <p className="text-lg leading-relaxed">
-                            Our projects include Campus Food Security, Community Garden, and Walkable Cities etc...<br />
-                            etc...<br />
-                            etc...<br />
-                            etc...
+                            There are 3 community projects running within the Community Projects Branch, Campus Food Systems (CFS), Walkable Cities and Community Garden, each addressing a community issue of its own.
                         </p>
                     </div>
                     <div>
@@ -48,10 +42,7 @@ export default function About() {
                     <div className="order-1 lg:order-2">
                         <h2 className="text-3xl font-semibold mb-4">CFS Research Team</h2>
                         <p className="text-lg leading-relaxed">
-                            Our Research Team is understanding and addressing food insecurity etc...<br />
-                            etc...<br />
-                            etc...<br />
-                            etc...
+                            The EWB Campus Food Systems Research Team addresses the root causes of food insecurity within the University of Toronto community through the conducting of extensive research (via surveys, etc.). The ultimate goal is to harness the resulting information and use it to explore actionable solutions and construct an academic paper. The Research Team aims to share their work with the UofT community through different outlets such as posters, research symposiums, events, social media posts and so much more.
                         </p>
                     </div>
                 </div>
