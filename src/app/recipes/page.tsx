@@ -23,17 +23,17 @@ type Recipe = {
 const recipes: Recipe[] = [
   {
     id: "muffins",
-    title: "Title",
-    url: "link to recipe",
-    image: <img src="/recipe-placeholder1.png" alt="muffins picture" className="object-cover w-20 h-20 sm:w-24 sm:h-24 lg:w-32 lg:h-32 rounded-lg" />,
-    time: "30mins",
+    title: "Spicy Sriracha Noodles",
+    url: "http://budgetbytes.com/spicy-noodles/",
+    image: <img src="/sriracha-noodles.jpg" alt="Spicy Sriracha Noodles picture" className="object-cover w-20 h-20 sm:w-24 sm:h-24 lg:w-32 lg:h-32 rounded-lg" />,
+    time: "15mins",
     minutes: 25,
     priceEstimate: 7.5,
     dietaryOptions: ["vegan", "nut-free", "x"],
-    materialsList: "x, y, z",
-    instructions: "sentence here",
-    difficulty: "difficulty",
-    servings: "servings"
+    materialsList: "4 oz. lo mein noodles, 2 Tbsp butter, 1/4 tsp crushed red pepper, 2 large eggs, 1 Tbsp brown sugar, 1 Tbsp soy sauce, 2 Tbsp sriracha, 1 handful fresh cilantro, 1 green onion (sliced)",
+    instructions: "1. Prepare the sauce for the noodles. In a small bowl, stir together the brown sugar, soy sauce, and sriracha. Set the sauce aside.\n2. Bring a pot of water to a boil for the noodles. Once boiling, add the noodles and boil until tender. Drain the noodles in a colander.\n3. While waiting for the water to boil, crack two eggs into a bowl then whisk lightly.\n4. Heat the butter in a skillet over medium heat, then add the eggs and crushed pepper and lightly scramble the eggs. Avoid over cooking the eggs.\n5. Once the noodles have drained, add them to the skillet with the eggs, then drizzle the sauce over top. Toss the noodles and eggs to coat in the sauce.\n6. Top the noodles with fresh cilantro and sliced green onion, then serve",
+    difficulty: "Easy",
+    servings: "2"
   },
   {
     id: "pasta",
@@ -243,7 +243,7 @@ export default function Recipes() {
                       rel="noopener noreferrer"
                       className="text-sm sm:text-base lg:text-lg underline-offset-4 hover:underline break-words"
                     >
-                      {recipe.url.replace(/^https?:\/\//, "")}
+                      link to recipe
                     </a>
 
                     <button
@@ -262,8 +262,12 @@ export default function Recipes() {
                         <ul className="mt-2 space-y-1.5 text-sm sm:text-base lg:text-lg">
                           {details.filter(d => d.value?.trim()).map((d, i) => (
                             <li key={i}>
-                              <span className="font-semibold">{d.label}</span>{" "}
-                              <span className="opacity-90">{d.value}</span>
+                              <span className={d.label === "Materials:" || d.label === "Detailed instructions:" ? "font-semibold block" : "font-semibold"}>
+                                {d.label}
+                              </span>{" "}
+                              <span className={d.label === "Detailed instructions:" ? "opacity-90 whitespace-pre-line" : "opacity-90"}>
+                                {d.value}
+                              </span>
                             </li>
                           ))}
                         </ul>
