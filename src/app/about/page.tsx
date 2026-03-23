@@ -47,23 +47,6 @@ export default function About() {
                     </div>
                 </div>
 
-                {/* Section 4: Community Engagement - Image RIGHT, Content LEFT */}
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start mb-16">
-                    <div>
-                        <h2 className="text-3xl font-semibold mb-4">Community Engagement</h2>
-                        <p className="text-lg leading-relaxed">
-                            We believe in the power of community and communication etc...<br />
-                            etc...<br />
-                            etc...<br />
-                            etc...
-                        </p>
-                    </div>
-                    <div>
-                        <div className="w-full h-64 lg:h-80 flex items-center justify-center border-2 border-black">
-                            <span className="text-black text-xl">Image</span>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     )
