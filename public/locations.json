@@ -17,7 +17,7 @@
     },
     "hours_message": "",
     "url": "",
-    "last_updated": "2026-07-01T15:46:34.224031"
+    "last_updated": "2026-07-02T15:21:54.106351"
   },
   {
     "id": "10619",
@@ -29,7 +29,7 @@
     "hours": null,
     "hours_message": "",
     "url": "https://foodservices.utoronto.ca/robarts-food-hall/",
-    "last_updated": "2026-07-01T15:46:34.224192"
+    "last_updated": "2026-07-02T15:21:54.106467"
   },
   {
     "id": "2212",
@@ -38,18 +38,10 @@
     "lat": 43.665339,
     "lng": -79.398383,
     "type": "Coffee, Tea, Baked goods, Snacks",
-    "hours": {
-      "Monday": "8:00 AM - 6:00 PM",
-      "Tuesday": "8:00 AM - 6:00 PM",
-      "Wednesday": "8:00 AM - 6:00 PM",
-      "Thursday": "8:00 AM - 6:00 PM",
-      "Friday": "8:00 AM - 2:00 PM",
-      "Saturday": "Closed",
-      "Sunday": "Closed"
-    },
+    "hours": null,
     "hours_message": "",
     "url": "",
-    "last_updated": "2026-07-01T15:46:34.224984"
+    "last_updated": "2026-07-02T15:21:54.106549"
   },
   {
     "id": "2237",
@@ -69,7 +61,7 @@
     },
     "hours_message": "",
     "url": "",
-    "last_updated": "2026-07-01T15:46:34.225768"
+    "last_updated": "2026-07-02T15:21:54.107234"
   },
   {
     "id": "2239",
@@ -81,7 +73,7 @@
     "hours": null,
     "hours_message": "For up-to-date operating hours please visit the Wolfond Centre website",
     "url": "https://hillelontario.org/uoft/",
-    "last_updated": "2026-07-01T15:46:34.225894"
+    "last_updated": "2026-07-02T15:21:54.107351"
   },
   {
     "id": "6468",
@@ -101,7 +93,7 @@
     },
     "hours_message": "",
     "url": "",
-    "last_updated": "2026-07-01T15:46:34.226758"
+    "last_updated": "2026-07-02T15:21:54.107879"
   },
   {
     "id": "10621",
@@ -113,7 +105,7 @@
     "hours": null,
     "hours_message": "",
     "url": "https://foodservices.utoronto.ca/sids-food-hall/",
-    "last_updated": "2026-07-01T15:46:34.226863"
+    "last_updated": "2026-07-02T15:21:54.107957"
   },
   {
     "id": "3536",
@@ -125,7 +117,7 @@
     "hours": null,
     "hours_message": "For up-to-date operating hours and meal plan details please visit the University College website",
     "url": "https://www.uc.utoronto.ca/students-current-students-food-cafe-reznikoff",
-    "last_updated": "2026-07-01T15:46:34.226988"
+    "last_updated": "2026-07-02T15:21:54.108055"
   },
   {
     "id": "3539",
@@ -137,7 +129,7 @@
     "hours": null,
     "hours_message": "For up-to-date operating hours and meal plan details please visit the University College website",
     "url": "https://www.uc.utoronto.ca/students-current-students-food-howard-ferguson-dining-hall",
-    "last_updated": "2026-07-01T15:46:34.227138"
+    "last_updated": "2026-07-02T15:21:54.108147"
   },
   {
     "id": "2214",
@@ -157,7 +149,7 @@
     },
     "hours_message": "",
     "url": "",
-    "last_updated": "2026-07-01T15:46:34.227850"
+    "last_updated": "2026-07-02T15:21:54.108705"
   },
   {
     "id": "686",
@@ -177,7 +169,7 @@
     },
     "hours_message": "",
     "url": "",
-    "last_updated": "2026-07-01T15:46:34.228618"
+    "last_updated": "2026-07-02T15:21:54.109232"
   },
   {
     "id": "10046",
@@ -197,7 +189,7 @@
     },
     "hours_message": "",
     "url": "",
-    "last_updated": "2026-07-01T15:46:34.229401"
+    "last_updated": "2026-07-02T15:21:54.109882"
   },
   {
     "id": "3853",
@@ -209,7 +201,7 @@
     "hours": null,
     "hours_message": "For up-to-date operating hours and meal plan details please visit the Trinity website",
     "url": "https://www.trinity.utoronto.ca/engage/dining-at-trinity/",
-    "last_updated": "2026-07-01T15:46:34.229524"
+    "last_updated": "2026-07-02T15:21:54.109980"
   },
   {
     "id": "11631",
@@ -221,7 +213,7 @@
     "hours": null,
     "hours_message": "",
     "url": "https://foodservices.utoronto.ca/oak-house-dining-commons/",
-    "last_updated": "2026-07-01T15:46:34.229614"
+    "last_updated": "2026-07-02T15:21:54.110047"
   },
   {
     "id": "10069",
@@ -241,7 +233,7 @@
     },
     "hours_message": "",
     "url": "",
-    "last_updated": "2026-07-01T15:46:34.230494"
+    "last_updated": "2026-07-02T15:21:54.110589"
   },
   {
     "id": "2282",
@@ -253,7 +245,7 @@
     "hours": null,
     "hours_message": "",
     "url": "https://foodservices.utoronto.ca/new-college-dining-commons/",
-    "last_updated": "2026-07-01T15:46:34.230582"
+    "last_updated": "2026-07-02T15:21:54.110659"
   },
   {
     "id": "10066",
@@ -273,7 +265,7 @@
     },
     "hours_message": "",
     "url": "",
-    "last_updated": "2026-07-01T15:46:34.231330"
+    "last_updated": "2026-07-02T15:21:54.111154"
   },
   {
     "id": "3533",
@@ -285,7 +277,7 @@
     "hours": null,
     "hours_message": "For up-to-date operating hours and meal plan details please visit the Gallery Grill website",
     "url": "https://harthouse.ca/gallery-grill",
-    "last_updated": "2026-07-01T15:46:34.231449"
+    "last_updated": "2026-07-02T15:21:54.111248"
   },
   {
     "id": "4151",
@@ -297,7 +289,7 @@
     "hours": null,
     "hours_message": "For up-to-date operating hours and meal plan details please visit The Faculty Club website.",
     "url": "https://www.facultyclub.utoronto.ca",
-    "last_updated": "2026-07-01T15:46:34.231510"
+    "last_updated": "2026-07-02T15:21:54.111297"
   },
   {
     "id": "1274",
@@ -309,7 +301,7 @@
     "hours": null,
     "hours_message": "",
     "url": "",
-    "last_updated": "2026-07-01T15:46:34.231595"
+    "last_updated": "2026-07-02T15:21:54.111375"
   },
   {
     "id": "3649",
@@ -321,7 +313,7 @@
     "hours": null,
     "hours_message": "For up-to-date operating hours and meal plan details please visit the Hart House website",
     "url": "https://harthouse.ca/contact/hours#arbor-room",
-    "last_updated": "2026-07-01T15:46:34.231707"
+    "last_updated": "2026-07-02T15:21:54.111468"
   },
   {
     "id": "10452",
@@ -333,7 +325,7 @@
     "hours": null,
     "hours_message": "",
     "url": "",
-    "last_updated": "2026-07-01T15:46:34.231791"
+    "last_updated": "2026-07-02T15:21:54.111534"
   },
   {
     "id": "4980",
@@ -353,7 +345,7 @@
     },
     "hours_message": "",
     "url": "",
-    "last_updated": "2026-07-01T15:46:34.232525"
+    "last_updated": "2026-07-02T15:21:54.112978"
   },
   {
     "id": "1264",
@@ -362,18 +354,10 @@
     "lat": 43.666118,
     "lng": -79.393794,
     "type": "Sandwiches, Salads, Baked Goods etc.",
-    "hours": {
-      "Monday": "9:00 AM - 3:00 PM",
-      "Tuesday": "9:00 AM - 3:00 PM",
-      "Wednesday": "9:00 AM - 3:00 PM",
-      "Thursday": "9:00 AM - 3:00 PM",
-      "Friday": "9:00 AM - 2:00 PM",
-      "Saturday": "Closed",
-      "Sunday": "Closed"
-    },
+    "hours": null,
     "hours_message": "",
     "url": "",
-    "last_updated": "2026-07-01T15:46:34.233374"
+    "last_updated": "2026-07-02T15:21:54.113064"
   },
   {
     "id": "11311",
@@ -387,13 +371,13 @@
       "Tuesday": "9:30 AM - 5:00 PM",
       "Wednesday": "9:30 AM - 5:00 PM",
       "Thursday": "9:30 AM - 5:00 PM",
-      "Friday": "9:30 AM - 5:00 PM",
+      "Friday": "9:30 AM - 4:30 PM",
       "Saturday": "Closed",
       "Sunday": "Closed"
     },
     "hours_message": "",
     "url": "",
-    "last_updated": "2026-07-01T15:46:34.234120"
+    "last_updated": "2026-07-02T15:21:54.113620"
   },
   {
     "id": "10985",
@@ -402,18 +386,10 @@
     "lat": 43.659575,
     "lng": -79.397373,
     "type": "COFFEE, TEA, SANDWICHES, SNACKS",
-    "hours": {
-      "Monday": "11:00 AM - 2:00 PM",
-      "Tuesday": "11:00 AM - 2:00 PM",
-      "Wednesday": "11:00 AM - 2:00 PM",
-      "Thursday": "11:00 AM - 2:00 PM",
-      "Friday": "11:00 AM - 2:00 PM",
-      "Saturday": "Closed",
-      "Sunday": "Closed"
-    },
+    "hours": null,
     "hours_message": "",
     "url": "",
-    "last_updated": "2026-07-01T15:46:34.234848"
+    "last_updated": "2026-07-02T15:21:54.113692"
   },
   {
     "id": "9765",
@@ -433,7 +409,7 @@
     },
     "hours_message": "",
     "url": "",
-    "last_updated": "2026-07-01T15:46:34.235637"
+    "last_updated": "2026-07-02T15:21:54.114239"
   },
   {
     "id": "10617",
@@ -453,7 +429,7 @@
     },
     "hours_message": "",
     "url": "https://foodservices.utoronto.ca/msb-food-hall/",
-    "last_updated": "2026-07-01T15:46:34.236517"
+    "last_updated": "2026-07-02T15:21:54.114802"
   },
   {
     "id": "11038",
@@ -473,7 +449,7 @@
     },
     "hours_message": "",
     "url": "",
-    "last_updated": "2026-07-01T15:46:34.237255"
+    "last_updated": "2026-07-02T15:21:54.115544"
   },
   {
     "id": "660",
@@ -493,7 +469,7 @@
     },
     "hours_message": "",
     "url": "https://foodservices.utoronto.ca/campus-one-dining-commons/",
-    "last_updated": "2026-07-01T15:46:34.238107"
+    "last_updated": "2026-07-02T15:21:54.116104"
   },
   {
     "id": "10054",
@@ -513,7 +489,7 @@
     },
     "hours_message": "",
     "url": "",
-    "last_updated": "2026-07-01T15:46:34.238872"
+    "last_updated": "2026-07-02T15:21:54.116679"
   },
   {
     "id": "10051",
@@ -533,7 +509,7 @@
     },
     "hours_message": "",
     "url": "",
-    "last_updated": "2026-07-01T15:46:34.239689"
+    "last_updated": "2026-07-02T15:21:54.117237"
   },
   {
     "id": "10060",
@@ -553,7 +529,7 @@
     },
     "hours_message": "",
     "url": "",
-    "last_updated": "2026-07-01T15:46:34.240571"
+    "last_updated": "2026-07-02T15:21:54.117931"
   },
   {
     "id": "4305",
@@ -565,7 +541,7 @@
     "hours": null,
     "hours_message": "For up-to-date operating hours and location details please visit the St. Michael's website",
     "url": "https://library.stmikes.utoronto.ca/using-the-library/hours/",
-    "last_updated": "2026-07-01T15:46:34.240691"
+    "last_updated": "2026-07-02T15:21:54.118034"
   },
   {
     "id": "2210",
@@ -585,7 +561,7 @@
     },
     "hours_message": "",
     "url": "",
-    "last_updated": "2026-07-01T15:46:34.241425"
+    "last_updated": "2026-07-02T15:21:54.118593"
   },
   {
     "id": "10063",
@@ -595,17 +571,17 @@
     "lng": -79.389145,
     "type": "SUSHI, COFFEE, TEA, BAKED GOODS",
     "hours": {
-      "Monday": "7:00 AM - 7:00 PM",
-      "Tuesday": "7:00 AM - 7:00 PM",
-      "Wednesday": "7:00 AM - 7:00 PM",
-      "Thursday": "7:00 AM - 7:00 PM",
-      "Friday": "7:00 AM - 7:00 PM",
-      "Saturday": "10:00 AM - 4:00 PM",
+      "Monday": "7:00 AM - 6:00 PM",
+      "Tuesday": "7:00 AM - 6:00 PM",
+      "Wednesday": "7:00 AM - 6:00 PM",
+      "Thursday": "7:00 AM - 6:00 PM",
+      "Friday": "7:00 AM - 6:00 PM",
+      "Saturday": "Closed",
       "Sunday": "Closed"
     },
     "hours_message": "",
     "url": "",
-    "last_updated": "2026-07-01T15:46:34.242163"
+    "last_updated": "2026-07-02T15:21:54.119136"
   },
   {
     "id": "10077",
@@ -625,7 +601,7 @@
     },
     "hours_message": "",
     "url": "",
-    "last_updated": "2026-07-01T15:46:34.242867"
+    "last_updated": "2026-07-02T15:21:54.119699"
   },
   {
     "id": "10074",
@@ -645,7 +621,7 @@
     },
     "hours_message": "",
     "url": "",
-    "last_updated": "2026-07-01T15:46:34.243748"
+    "last_updated": "2026-07-02T15:21:54.120385"
   },
   {
     "id": "10080",
@@ -665,7 +641,7 @@
     },
     "hours_message": "",
     "url": "",
-    "last_updated": "2026-07-01T15:46:34.244516"
+    "last_updated": "2026-07-02T15:21:54.120941"
   },
   {
     "id": "2279",
@@ -685,7 +661,7 @@
     },
     "hours_message": "",
     "url": "https://foodservices.utoronto.ca/chestnut-dining-commons/",
-    "last_updated": "2026-07-01T15:46:34.245277"
+    "last_updated": "2026-07-02T15:21:54.121516"
   },
   {
     "id": "4302",
@@ -697,7 +673,7 @@
     "hours": null,
     "hours_message": "For up-to-date operating hours and meal plan details please visit the St. Michael's website",
     "url": "https://stmikes.utoronto.ca/community/st-michaels-college-residence/residence-life-meal-plans",
-    "last_updated": "2026-07-01T15:46:34.245395"
+    "last_updated": "2026-07-02T15:21:54.121619"
   },
   {
     "id": "4308",
@@ -709,6 +685,6 @@
     "hours": null,
     "hours_message": "For up-to-date operating hours and meal plan details please visit the St. Michael's website",
     "url": "https://stmikes.utoronto.ca/news/brennan-hall-puts-community-at-the-heart-of-st-mikes",
-    "last_updated": "2026-07-01T15:46:34.245519"
+    "last_updated": "2026-07-02T15:21:54.121722"
   }
 ]
