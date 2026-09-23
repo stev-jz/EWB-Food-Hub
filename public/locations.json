@@ -1,86 +1,86 @@
 [
   {
-    "id": "2221",
+    "id": 2221,
     "name": "Starbucks | Robarts",
     "address": "130 St. George St., Toronto, ON",
     "lat": 43.664461,
     "lng": -79.399004,
     "type": "COFFEE, TEA, BAKED GOODS, SNACKS",
     "hours": {
-      "Monday": "8:30 AM - 10:00 PM",
-      "Tuesday": "8:30 AM - 10:00 PM",
-      "Wednesday": "8:30 AM - 10:00 PM",
-      "Thursday": "8:30 AM - 10:00 PM",
-      "Friday": "8:30 AM - 10:00 PM",
-      "Saturday": "10:00 AM - 7:00 PM",
-      "Sunday": "10:00 AM - 7:00 PM"
+      "Monday": "8:30 AM\u201310:00 PM",
+      "Tuesday": "8:30 AM\u201310:00 PM",
+      "Wednesday": "8:30 AM\u201310:00 PM",
+      "Thursday": "8:30 AM\u201310:00 PM",
+      "Friday": "8:30 AM\u201310:00 PM",
+      "Saturday": "10:00 AM\u20137:00 PM",
+      "Sunday": "10:00 AM\u20137:00 PM"
     },
     "hours_message": "",
     "url": "",
-    "last_updated": "2026-09-22T17:35:20.856770"
+    "last_updated": "2026-09-23T17:47:08.987444"
   },
   {
-    "id": "10619",
+    "id": 10619,
     "name": "Robarts Food Hall",
     "address": "130 St. George Street, Toronto, ON",
     "lat": 43.664486,
     "lng": -79.39969,
     "type": "FOOD HALL",
     "hours": {
-      "Monday": "11:00 AM - 6:00 PM",
-      "Tuesday": "11:00 AM - 6:00 PM",
-      "Wednesday": "11:00 AM - 6:00 PM",
-      "Thursday": "11:00 AM - 6:00 PM",
-      "Friday": "11:00 AM - 5:00 PM",
+      "Monday": "11:00 AM\u20136:00 PM",
+      "Tuesday": "11:00 AM\u20136:00 PM",
+      "Wednesday": "11:00 AM\u20136:00 PM",
+      "Thursday": "11:00 AM\u20136:00 PM",
+      "Friday": "11:00 AM\u20135:00 PM",
       "Saturday": "Closed",
       "Sunday": "Closed"
     },
     "hours_message": "",
     "url": "https://foodservices.utoronto.ca/robarts-food-hall/",
-    "last_updated": "2026-09-22T17:35:20.857333"
+    "last_updated": "2026-09-23T17:47:08.988994"
   },
   {
-    "id": "2212",
+    "id": 2212,
     "name": "Second Cup | Rotman",
     "address": "105 St. George St., Toronto, ON",
     "lat": 43.665339,
     "lng": -79.398383,
     "type": "Coffee, Tea, Baked goods, Snacks",
     "hours": {
-      "Monday": "8:00 AM - 7:00 PM",
-      "Tuesday": "8:00 AM - 7:00 PM",
-      "Wednesday": "8:00 AM - 7:00 PM",
-      "Thursday": "8:00 AM - 7:00 PM",
-      "Friday": "8:00 AM - 5:00 PM",
+      "Monday": "8:00 AM\u20137:00 PM",
+      "Tuesday": "8:00 AM\u20137:00 PM",
+      "Wednesday": "8:00 AM\u20137:00 PM",
+      "Thursday": "8:00 AM\u20137:00 PM",
+      "Friday": "8:00 AM\u20135:00 PM",
       "Saturday": "Closed",
       "Sunday": "Closed"
     },
     "hours_message": "",
     "url": "",
-    "last_updated": "2026-09-22T17:35:20.857850"
+    "last_updated": "2026-09-23T17:47:08.990371"
   },
   {
-    "id": "2237",
+    "id": 2237,
     "name": "The Exchange Caf\u00e9 | Rotman",
     "address": "105 St. George St., Toronto, ON",
     "lat": 43.665339,
     "lng": -79.398383,
     "type": "SOUPS, SANDWICHES, SNACKS, BAKED GOODS",
     "hours": {
-      "Monday": "7:00 AM - 6:00 PM",
-      "Tuesday": "7:00 AM - 6:00 PM",
-      "Wednesday": "7:00 AM - 6:00 PM",
-      "Thursday": "7:00 AM - 6:00 PM",
-      "Friday": "7:00 AM - 6:00 PM",
-      "Saturday": "10:00 AM - 2:00 PM",
+      "Monday": "7:00 AM\u20136:00 PM",
+      "Tuesday": "7:00 AM\u20136:00 PM",
+      "Wednesday": "7:00 AM\u20136:00 PM",
+      "Thursday": "7:00 AM\u20136:00 PM",
+      "Friday": "7:00 AM\u20136:00 PM",
+      "Saturday": "10:00 AM\u20132:00 PM",
       "Sunday": "Closed"
     },
     "hours_message": "",
     "url": "",
-    "last_updated": "2026-09-22T17:35:20.858439"
+    "last_updated": "2026-09-23T17:47:08.991855"
   },
   {
-    "id": "2239",
+    "id": 2239,
     "name": "Wolfond Centre",
     "address": "36 Harbord St., Toronto, ON",
     "lat": 43.66358,
@@ -89,50 +89,50 @@
     "hours": null,
     "hours_message": "For up-to-date operating hours please visit the Wolfond Centre website",
     "url": "https://hillelontario.org/uoft/",
-    "last_updated": "2026-09-22T17:35:20.858525"
+    "last_updated": "2026-09-23T17:47:08.991985"
   },
   {
-    "id": "6468",
-    "name": "Kung Fu Tea | Sid Smith",
-    "address": "100 St. George St., Toronto",
-    "lat": 43.66287,
-    "lng": -79.398283,
-    "type": "BUBBLE TEA",
+    "id": 686,
+    "name": "Second Cup | Athletic Centre",
+    "address": "55 Harbord Street, Toronto, ON",
+    "lat": 43.66286,
+    "lng": -79.401037,
+    "type": "COFFEE, TEA, SNACKS",
     "hours": {
-      "Monday": "11:00 AM - 5:00 PM",
-      "Tuesday": "11:00 AM - 5:00 PM",
-      "Wednesday": "11:00 AM - 5:00 PM",
-      "Thursday": "11:00 AM - 5:00 PM",
-      "Friday": "11:00 AM - 5:00 PM",
+      "Monday": "8:00 AM\u20137:00 PM",
+      "Tuesday": "8:00 AM\u20137:00 PM",
+      "Wednesday": "8:00 AM\u20137:00 PM",
+      "Thursday": "8:00 AM\u20137:00 PM",
+      "Friday": "8:00 AM\u20135:00 PM",
       "Saturday": "Closed",
       "Sunday": "Closed"
     },
     "hours_message": "",
     "url": "",
-    "last_updated": "2026-09-22T17:35:20.858975"
+    "last_updated": "2026-09-23T17:47:08.993489"
   },
   {
-    "id": "10621",
-    "name": "Sid\u2019s Food Hall",
-    "address": "100 St. George Street, Toronto, ON",
-    "lat": 43.662732,
-    "lng": -79.398806,
-    "type": "FOOD HALL",
+    "id": 2214,
+    "name": "Second Cup | Sid Smith",
+    "address": "100 St. George St., Toronto, ON",
+    "lat": 43.662728,
+    "lng": -79.398092,
+    "type": "COFFEE, TEA, BAKED GOODS, SNACKS",
     "hours": {
-      "Monday": "11:00 AM - 5:00 PM",
-      "Tuesday": "11:00 AM - 5:00 PM",
-      "Wednesday": "11:00 AM - 5:00 PM",
-      "Thursday": "11:00 AM - 5:00 PM",
-      "Friday": "11:00 AM - 5:00 PM",
+      "Monday": "8:00 AM\u20137:00 PM",
+      "Tuesday": "8:00 AM\u20137:00 PM",
+      "Wednesday": "8:00 AM\u20137:00 PM",
+      "Thursday": "8:00 AM\u20137:00 PM",
+      "Friday": "8:00 AM\u20135:00 PM",
       "Saturday": "Closed",
       "Sunday": "Closed"
     },
     "hours_message": "",
-    "url": "https://foodservices.utoronto.ca/sids-food-hall/",
-    "last_updated": "2026-09-22T17:35:20.859442"
+    "url": "",
+    "last_updated": "2026-09-23T17:47:08.994818"
   },
   {
-    "id": "3536",
+    "id": 3536,
     "name": "Caf\u00e9 Reznikoff",
     "address": "75 St George St, Toronto",
     "lat": 43.663142,
@@ -141,10 +141,10 @@
     "hours": null,
     "hours_message": "For up-to-date operating hours and meal plan details please visit the University College website",
     "url": "https://www.uc.utoronto.ca/students-current-students-food-cafe-reznikoff",
-    "last_updated": "2026-09-22T17:35:20.859520"
+    "last_updated": "2026-09-23T17:47:08.994950"
   },
   {
-    "id": "3539",
+    "id": 3539,
     "name": "Howard Ferguson",
     "address": "75 St. George Street, Toronto",
     "lat": 43.663142,
@@ -153,70 +153,10 @@
     "hours": null,
     "hours_message": "For up-to-date operating hours and meal plan details please visit the University College website",
     "url": "https://www.uc.utoronto.ca/students-current-students-food-howard-ferguson-dining-hall",
-    "last_updated": "2026-09-22T17:35:20.859590"
+    "last_updated": "2026-09-23T17:47:08.995071"
   },
   {
-    "id": "2214",
-    "name": "Second Cup | Sid Smith",
-    "address": "100 St. George St., Toronto, ON",
-    "lat": 43.662728,
-    "lng": -79.398092,
-    "type": "COFFEE, TEA, BAKED GOODS, SNACKS",
-    "hours": {
-      "Monday": "8:00 AM - 7:00 PM",
-      "Tuesday": "8:00 AM - 7:00 PM",
-      "Wednesday": "8:00 AM - 7:00 PM",
-      "Thursday": "8:00 AM - 7:00 PM",
-      "Friday": "8:00 AM - 5:00 PM",
-      "Saturday": "Closed",
-      "Sunday": "Closed"
-    },
-    "hours_message": "",
-    "url": "",
-    "last_updated": "2026-09-22T17:35:20.860045"
-  },
-  {
-    "id": "686",
-    "name": "Second Cup | Athletic Centre",
-    "address": "55 Harbord Street, Toronto, ON",
-    "lat": 43.66286,
-    "lng": -79.401037,
-    "type": "COFFEE, TEA, SNACKS",
-    "hours": {
-      "Monday": "8:00 AM - 7:00 PM",
-      "Tuesday": "8:00 AM - 7:00 PM",
-      "Wednesday": "8:00 AM - 7:00 PM",
-      "Thursday": "8:00 AM - 7:00 PM",
-      "Friday": "8:00 AM - 5:00 PM",
-      "Saturday": "Closed",
-      "Sunday": "Closed"
-    },
-    "hours_message": "",
-    "url": "",
-    "last_updated": "2026-09-22T17:35:20.860603"
-  },
-  {
-    "id": "10046",
-    "name": "Booster Juice",
-    "address": "651 Spadina Ave., Toronto, ON",
-    "lat": 43.66377,
-    "lng": -79.40205,
-    "type": "SMOOTHIES",
-    "hours": {
-      "Monday": "7:00 AM - 9:00 PM",
-      "Tuesday": "7:00 AM - 9:00 PM",
-      "Wednesday": "7:00 AM - 9:00 PM",
-      "Thursday": "7:00 AM - 9:00 PM",
-      "Friday": "7:00 AM - 9:00 PM",
-      "Saturday": "8:00 AM - 9:00 PM",
-      "Sunday": "10:00 AM - 6:00 PM"
-    },
-    "hours_message": "",
-    "url": "",
-    "last_updated": "2026-09-22T17:35:20.861072"
-  },
-  {
-    "id": "3853",
+    "id": 3853,
     "name": "The Buttery",
     "address": "15 Devonshire Place, Toronto, ON",
     "lat": 43.665698,
@@ -225,90 +165,150 @@
     "hours": null,
     "hours_message": "For up-to-date operating hours and meal plan details please visit the Trinity website",
     "url": "https://www.trinity.utoronto.ca/engage/dining-at-trinity/",
-    "last_updated": "2026-09-22T17:35:20.861148"
+    "last_updated": "2026-09-23T17:47:08.995191"
   },
   {
-    "id": "11631",
-    "name": "Oak House",
-    "address": "700 Spadina Avenue, Toronto, ON",
-    "lat": 43.664746,
-    "lng": -79.40315,
-    "type": "DINING COMMONS",
+    "id": 6468,
+    "name": "Kung Fu Tea | Sid Smith",
+    "address": "100 St. George St., Toronto",
+    "lat": 43.66287,
+    "lng": -79.398283,
+    "type": "BUBBLE TEA",
     "hours": {
-      "Monday": "7:00 AM - 9:00 PM",
-      "Tuesday": "7:00 AM - 9:00 PM",
-      "Wednesday": "7:00 AM - 9:00 PM",
-      "Thursday": "7:00 AM - 9:00 PM",
-      "Friday": "7:00 AM - 8:00 PM",
-      "Saturday": "8:00 AM - 8:00 PM",
-      "Sunday": "8:00 AM - 8:00 PM"
-    },
-    "hours_message": "",
-    "url": "https://foodservices.utoronto.ca/oak-house-dining-commons/",
-    "last_updated": "2026-09-22T17:35:20.861612"
-  },
-  {
-    "id": "10069",
-    "name": "L\u2019Espresso",
-    "address": "321 Bloor St W., Toronto, ON",
-    "lat": 43.667433,
-    "lng": -79.399178,
-    "type": "COFEE, BAKED GOODS",
-    "hours": {
-      "Monday": "7:00 AM - 9:00 PM",
-      "Tuesday": "7:00 AM - 9:00 PM",
-      "Wednesday": "7:00 AM - 9:00 PM",
-      "Thursday": "7:00 AM - 9:00 PM",
-      "Friday": "7:00 AM - 9:00 PM",
-      "Saturday": "8:00 AM - 6:00 PM",
-      "Sunday": "8:30 AM - 6:00 PM"
+      "Monday": "11:00 AM\u20135:00 PM",
+      "Tuesday": "11:00 AM\u20135:00 PM",
+      "Wednesday": "11:00 AM\u20135:00 PM",
+      "Thursday": "11:00 AM\u20135:00 PM",
+      "Friday": "11:00 AM\u20135:00 PM",
+      "Saturday": "Closed",
+      "Sunday": "Closed"
     },
     "hours_message": "",
     "url": "",
-    "last_updated": "2026-09-22T17:35:20.862081"
+    "last_updated": "2026-09-23T17:47:08.996662"
   },
   {
-    "id": "2282",
+    "id": 10046,
+    "name": "Booster Juice",
+    "address": "651 Spadina Ave., Toronto, ON",
+    "lat": 43.66377,
+    "lng": -79.40205,
+    "type": "SMOOTHIES",
+    "hours": {
+      "Monday": "7:00 AM\u20139:00 PM",
+      "Tuesday": "7:00 AM\u20139:00 PM",
+      "Wednesday": "7:00 AM\u20139:00 PM",
+      "Thursday": "7:00 AM\u20139:00 PM",
+      "Friday": "7:00 AM\u20139:00 PM",
+      "Saturday": "8:00 AM\u20139:00 PM",
+      "Sunday": "10:00 AM\u20136:00 PM"
+    },
+    "hours_message": "",
+    "url": "",
+    "last_updated": "2026-09-23T17:47:08.998161"
+  },
+  {
+    "id": 10621,
+    "name": "Sid\u2019s Food Hall",
+    "address": "100 St. George Street, Toronto, ON",
+    "lat": 43.662732,
+    "lng": -79.398806,
+    "type": "FOOD HALL",
+    "hours": {
+      "Monday": "11:00 AM\u20135:00 PM",
+      "Tuesday": "11:00 AM\u20135:00 PM",
+      "Wednesday": "11:00 AM\u20135:00 PM",
+      "Thursday": "11:00 AM\u20135:00 PM",
+      "Friday": "11:00 AM\u20135:00 PM",
+      "Saturday": "Closed",
+      "Sunday": "Closed"
+    },
+    "hours_message": "",
+    "url": "https://foodservices.utoronto.ca/sids-food-hall/",
+    "last_updated": "2026-09-23T17:47:08.999530"
+  },
+  {
+    "id": 2282,
     "name": "New College",
     "address": "40 Willcocks Street, Toronto, ON",
     "lat": 43.661547,
     "lng": -79.400879,
     "type": "DINING COMMONS",
     "hours": {
-      "Monday": "7:00 AM - 10:00 PM",
-      "Tuesday": "7:00 AM - 10:00 PM",
-      "Wednesday": "7:00 AM - 10:00 PM",
-      "Thursday": "7:00 AM - 10:00 PM",
-      "Friday": "7:00 AM - 9:00 PM",
-      "Saturday": "8:00 AM - 9:00 PM",
-      "Sunday": "8:00 AM - 10:00 PM"
+      "Monday": "7:00 AM\u201310:00 PM",
+      "Tuesday": "7:00 AM\u201310:00 PM",
+      "Wednesday": "7:00 AM\u201310:00 PM",
+      "Thursday": "7:00 AM\u201310:00 PM",
+      "Friday": "7:00 AM\u20139:00 PM",
+      "Saturday": "8:00 AM\u20139:00 PM",
+      "Sunday": "8:00 AM\u201310:00 PM"
     },
     "hours_message": "",
     "url": "https://foodservices.utoronto.ca/new-college-dining-commons/",
-    "last_updated": "2026-09-22T17:35:20.862639"
+    "last_updated": "2026-09-23T17:47:09.001142"
   },
   {
-    "id": "10066",
-    "name": "Bar Mercurio",
-    "address": "270 Bloor St W., Toronto, ON",
-    "lat": 43.667549,
-    "lng": -79.400484,
-    "type": "ITALIAN",
+    "id": 10069,
+    "name": "L\u2019Espresso",
+    "address": "321 Bloor St W., Toronto, ON",
+    "lat": 43.667433,
+    "lng": -79.399178,
+    "type": "COFEE, BAKED GOODS",
     "hours": {
-      "Monday": "Closed",
-      "Tuesday": "5:00 PM - 10:30 PM",
-      "Wednesday": "5:00 PM - 10:30 PM",
-      "Thursday": "5:00 PM - 10:30 PM",
-      "Friday": "5:00 PM - 10:30 PM",
-      "Saturday": "5:00 PM - 10:30 PM",
+      "Monday": "7:00 AM\u20139:00 PM",
+      "Tuesday": "7:00 AM\u20139:00 PM",
+      "Wednesday": "7:00 AM\u20139:00 PM",
+      "Thursday": "7:00 AM\u20139:00 PM",
+      "Friday": "7:00 AM\u20139:00 PM",
+      "Saturday": "8:00 AM\u20136:00 PM",
+      "Sunday": "8:30 AM\u20136:00 PM"
+    },
+    "hours_message": "",
+    "url": "",
+    "last_updated": "2026-09-23T17:47:09.002651"
+  },
+  {
+    "id": 11631,
+    "name": "Oak House",
+    "address": "700 Spadina Avenue, Toronto, ON",
+    "lat": 43.664746,
+    "lng": -79.40315,
+    "type": "DINING COMMONS",
+    "hours": {
+      "Monday": "7:00 AM\u20139:00 PM",
+      "Tuesday": "7:00 AM\u20139:00 PM",
+      "Wednesday": "7:00 AM\u20139:00 PM",
+      "Thursday": "7:00 AM\u20139:00 PM",
+      "Friday": "7:00 AM\u20138:00 PM",
+      "Saturday": "8:00 AM\u20138:00 PM",
+      "Sunday": "8:00 AM\u20138:00 PM"
+    },
+    "hours_message": "",
+    "url": "https://foodservices.utoronto.ca/oak-house-dining-commons/",
+    "last_updated": "2026-09-23T17:47:09.004255"
+  },
+  {
+    "id": 1274,
+    "name": "Caffe\u2019in | OISE",
+    "address": "252 Bloor Street W., Toronto, ON",
+    "lat": 43.668056,
+    "lng": -79.39851,
+    "type": "coffee, snacks",
+    "hours": {
+      "Monday": "8:30 AM\u20136:30 PM",
+      "Tuesday": "8:30 AM\u20136:30 PM",
+      "Wednesday": "8:30 AM\u20136:30 PM",
+      "Thursday": "8:30 AM\u20136:30 PM",
+      "Friday": "8:30 AM\u20136:30 PM",
+      "Saturday": "Closed",
       "Sunday": "Closed"
     },
     "hours_message": "",
     "url": "",
-    "last_updated": "2026-09-22T17:35:20.863067"
+    "last_updated": "2026-09-23T17:47:09.005620"
   },
   {
-    "id": "3533",
+    "id": 3533,
     "name": "Gallery Grill at Hart House",
     "address": "7 Hart House Circle, Toronto",
     "lat": 43.663626,
@@ -317,42 +317,10 @@
     "hours": null,
     "hours_message": "For up-to-date operating hours and meal plan details please visit the Gallery Grill website",
     "url": "https://harthouse.ca/gallery-grill",
-    "last_updated": "2026-09-22T17:35:20.863138"
+    "last_updated": "2026-09-23T17:47:09.005771"
   },
   {
-    "id": "4151",
-    "name": "The Faculty Club",
-    "address": "41 Willcocks street, Toronto",
-    "lat": 43.66117,
-    "lng": -79.400532,
-    "type": "",
-    "hours": null,
-    "hours_message": "For up-to-date operating hours and meal plan details please visit The Faculty Club website.",
-    "url": "https://www.facultyclub.utoronto.ca",
-    "last_updated": "2026-09-22T17:35:20.863174"
-  },
-  {
-    "id": "1274",
-    "name": "Caffe\u2019in | OISE",
-    "address": "252 Bloor Street W., Toronto, ON",
-    "lat": 43.668056,
-    "lng": -79.39851,
-    "type": "coffee, snacks",
-    "hours": {
-      "Monday": "8:30 AM - 6:30 PM",
-      "Tuesday": "8:30 AM - 6:30 PM",
-      "Wednesday": "8:30 AM - 6:30 PM",
-      "Thursday": "8:30 AM - 6:30 PM",
-      "Friday": "8:30 AM - 6:30 PM",
-      "Saturday": "Closed",
-      "Sunday": "Closed"
-    },
-    "hours_message": "",
-    "url": "",
-    "last_updated": "2026-09-22T17:35:20.863623"
-  },
-  {
-    "id": "3649",
+    "id": 3649,
     "name": "Arbor Room",
     "address": "7 Hart House Circle, Toronto",
     "lat": 43.664162,
@@ -361,250 +329,302 @@
     "hours": null,
     "hours_message": "For up-to-date operating hours and meal plan details please visit the Hart House website",
     "url": "https://harthouse.ca/contact/hours#arbor-room",
-    "last_updated": "2026-09-22T17:35:20.863694"
+    "last_updated": "2026-09-23T17:47:09.005902"
   },
   {
-    "id": "10452",
+    "id": 4151,
+    "name": "The Faculty Club",
+    "address": "41 Willcocks street, Toronto",
+    "lat": 43.66117,
+    "lng": -79.400532,
+    "type": "",
+    "hours": null,
+    "hours_message": "For up-to-date operating hours and meal plan details please visit The Faculty Club website.",
+    "url": "https://www.facultyclub.utoronto.ca",
+    "last_updated": "2026-09-23T17:47:09.005972"
+  },
+  {
+    "id": 10066,
+    "name": "Bar Mercurio",
+    "address": "270 Bloor St W., Toronto, ON",
+    "lat": 43.667549,
+    "lng": -79.400484,
+    "type": "ITALIAN",
+    "hours": {
+      "Monday": "Closed",
+      "Tuesday": "5:00 PM\u201310:30 PM",
+      "Wednesday": "5:00 PM\u201310:30 PM",
+      "Thursday": "5:00 PM\u201310:30 PM",
+      "Friday": "5:00 PM\u201310:30 PM",
+      "Saturday": "5:00 PM\u201310:30 PM",
+      "Sunday": "Closed"
+    },
+    "hours_message": "",
+    "url": "",
+    "last_updated": "2026-09-23T17:47:09.007457"
+  },
+  {
+    "id": 10452,
     "name": "Music Cafe | Edward Johnson",
     "address": "80 Queens Park, Toronto, ON",
     "lat": 43.666573,
     "lng": -79.394611,
     "type": "COFFEE, TEA, SNACKS",
     "hours": {
-      "Monday": "9:00 AM - 3:30 PM",
-      "Tuesday": "9:00 AM - 3:30 PM",
-      "Wednesday": "9:00 AM - 3:30 PM",
-      "Thursday": "9:00 AM - 3:30 PM",
-      "Friday": "9:00 AM - 3:30 PM",
+      "Monday": "9:00 AM\u20133:30 PM",
+      "Tuesday": "9:00 AM\u20133:30 PM",
+      "Wednesday": "9:00 AM\u20133:30 PM",
+      "Thursday": "9:00 AM\u20133:30 PM",
+      "Friday": "9:00 AM\u20133:30 PM",
       "Saturday": "Closed",
       "Sunday": "Closed"
     },
     "hours_message": "",
     "url": "",
-    "last_updated": "2026-09-22T17:35:20.864157"
+    "last_updated": "2026-09-23T17:47:09.008939"
   },
   {
-    "id": "4980",
-    "name": "Second Cup | Myhal",
-    "address": "55 St George St, Toronto, ON M5S 0C9, Toronto",
-    "lat": 43.660735,
-    "lng": -79.396612,
-    "type": "COFFEE, TEA, BAKED GOODS, SNACKS",
-    "hours": {
-      "Monday": "8:00 AM - 7:00 PM",
-      "Tuesday": "8:00 AM - 7:00 PM",
-      "Wednesday": "8:00 AM - 7:00 PM",
-      "Thursday": "8:00 AM - 7:00 PM",
-      "Friday": "8:00 AM - 5:00 PM",
-      "Saturday": "Closed",
-      "Sunday": "Closed"
-    },
-    "hours_message": "",
-    "url": "",
-    "last_updated": "2026-09-22T17:35:20.864710"
-  },
-  {
-    "id": "1264",
+    "id": 1264,
     "name": "Terima Coffee + Pantry Bar\u00a0| Law Building",
     "address": "78 Queen\u2019s Park, Toronto, ON",
     "lat": 43.666118,
     "lng": -79.393794,
     "type": "Sandwiches, Salads, Baked Goods etc.",
     "hours": {
-      "Monday": "8:00 AM - 5:00 PM",
-      "Tuesday": "8:00 AM - 5:00 PM",
-      "Wednesday": "8:00 AM - 5:00 PM",
-      "Thursday": "8:00 AM - 5:00 PM",
-      "Friday": "8:00 AM - 5:00 PM",
+      "Monday": "8:00 AM\u20135:00 PM",
+      "Tuesday": "8:00 AM\u20135:00 PM",
+      "Wednesday": "8:00 AM\u20135:00 PM",
+      "Thursday": "8:00 AM\u20135:00 PM",
+      "Friday": "8:00 AM\u20135:00 PM",
       "Saturday": "Closed",
       "Sunday": "Closed"
     },
     "hours_message": "",
     "url": "",
-    "last_updated": "2026-09-22T17:35:20.865151"
+    "last_updated": "2026-09-23T17:47:09.010273"
   },
   {
-    "id": "11311",
+    "id": 4980,
+    "name": "Second Cup | Myhal",
+    "address": "55 St George St, Toronto, ON M5S 0C9, Toronto",
+    "lat": 43.660735,
+    "lng": -79.396612,
+    "type": "COFFEE, TEA, BAKED GOODS, SNACKS",
+    "hours": {
+      "Monday": "8:00 AM\u20137:00 PM",
+      "Tuesday": "8:00 AM\u20137:00 PM",
+      "Wednesday": "8:00 AM\u20137:00 PM",
+      "Thursday": "8:00 AM\u20137:00 PM",
+      "Friday": "8:00 AM\u20135:00 PM",
+      "Saturday": "Closed",
+      "Sunday": "Closed"
+    },
+    "hours_message": "",
+    "url": "",
+    "last_updated": "2026-09-23T17:47:09.011738"
+  },
+  {
+    "id": 11311,
     "name": "Kibo Caf\u00e9 & Market | Gerstein Library",
     "address": "9 King's College Circle, Toronto, ON",
     "lat": 43.662098,
     "lng": -79.3937,
     "type": "SUSHI, COFFEE, TEA, BAKED GOODS",
     "hours": {
-      "Monday": "9:00 AM - 7:00 PM",
-      "Tuesday": "9:00 AM - 7:00 PM",
-      "Wednesday": "9:00 AM - 7:00 PM",
-      "Thursday": "9:00 AM - 7:00 PM",
-      "Friday": "9:00 AM - 7:00 PM",
-      "Saturday": "9:30 AM - 5:00 PM",
+      "Monday": "9:00 AM\u20137:00 PM",
+      "Tuesday": "9:00 AM\u20137:00 PM",
+      "Wednesday": "9:00 AM\u20137:00 PM",
+      "Thursday": "9:00 AM\u20137:00 PM",
+      "Friday": "9:00 AM\u20137:00 PM",
+      "Saturday": "9:30 AM\u20135:00 PM",
       "Sunday": "Closed"
     },
     "hours_message": "",
     "url": "",
-    "last_updated": "2026-09-22T17:35:20.865625"
+    "last_updated": "2026-09-23T17:47:09.013214"
   },
   {
-    "id": "10985",
-    "name": "About Noon by Veda | Bahen",
-    "address": "40 St George St, Toronto",
-    "lat": 43.659575,
-    "lng": -79.397373,
-    "type": "COFFEE, TEA, SANDWICHES, SNACKS",
-    "hours": {
-      "Monday": "8:00 AM - 5:00 PM",
-      "Tuesday": "8:00 AM - 5:00 PM",
-      "Wednesday": "8:00 AM - 5:00 PM",
-      "Thursday": "8:00 AM - 5:00 PM",
-      "Friday": "8:00 AM - 5:00 PM",
-      "Saturday": "Closed",
-      "Sunday": "Closed"
-    },
-    "hours_message": "",
-    "url": "",
-    "last_updated": "2026-09-22T17:35:20.866064"
-  },
-  {
-    "id": "9765",
+    "id": 9765,
     "name": "Wheels & Co. Beans",
     "address": "1 King\u2019s College Circle, Toronto",
     "lat": 43.660801,
     "lng": -79.393501,
     "type": "Coffee, Iced Drinks, Baked Goods",
     "hours": {
-      "Monday": "8:00 AM - 5:00 PM",
-      "Tuesday": "8:00 AM - 5:00 PM",
-      "Wednesday": "8:00 AM - 5:00 PM",
-      "Thursday": "8:00 AM - 5:00 PM",
-      "Friday": "8:00 AM - 5:00 PM",
-      "Saturday": "10:00 AM - 5:00 PM",
+      "Monday": "8:00 AM\u20135:00 PM",
+      "Tuesday": "8:00 AM\u20135:00 PM",
+      "Wednesday": "8:00 AM\u20135:00 PM",
+      "Thursday": "8:00 AM\u20135:00 PM",
+      "Friday": "8:00 AM\u20135:00 PM",
+      "Saturday": "10:00 AM\u20135:00 PM",
       "Sunday": "Closed"
     },
     "hours_message": "",
     "url": "",
-    "last_updated": "2026-09-22T17:35:20.866609"
+    "last_updated": "2026-09-23T17:47:09.014712"
   },
   {
-    "id": "10617",
+    "id": 10617,
     "name": "MSB Food Hall",
     "address": "1 King's College Circle, Toronto, ON",
     "lat": 43.660801,
     "lng": -79.393501,
     "type": "FOOD HALL",
     "hours": {
-      "Monday": "8:30 AM - 6:00 PM",
-      "Tuesday": "8:30 AM - 6:00 PM",
-      "Wednesday": "8:30 AM - 6:00 PM",
-      "Thursday": "8:30 AM - 6:00 PM",
-      "Friday": "8:30 AM - 5:00 PM",
+      "Monday": "8:30 AM\u20136:00 PM",
+      "Tuesday": "8:30 AM\u20136:00 PM",
+      "Wednesday": "8:30 AM\u20136:00 PM",
+      "Thursday": "8:30 AM\u20136:00 PM",
+      "Friday": "8:30 AM\u20135:00 PM",
       "Saturday": "Closed",
       "Sunday": "Closed"
     },
     "hours_message": "",
     "url": "https://foodservices.utoronto.ca/msb-food-hall/",
-    "last_updated": "2026-09-22T17:35:20.867047"
+    "last_updated": "2026-09-23T17:47:09.016182"
   },
   {
-    "id": "11038",
+    "id": 10985,
+    "name": "About Noon by Veda | Bahen",
+    "address": "40 St George St, Toronto",
+    "lat": 43.659575,
+    "lng": -79.397373,
+    "type": "COFFEE, TEA, SANDWICHES, SNACKS",
+    "hours": {
+      "Monday": "8:00 AM\u20135:00 PM",
+      "Tuesday": "8:00 AM\u20135:00 PM",
+      "Wednesday": "8:00 AM\u20135:00 PM",
+      "Thursday": "8:00 AM\u20135:00 PM",
+      "Friday": "8:00 AM\u20135:00 PM",
+      "Saturday": "Closed",
+      "Sunday": "Closed"
+    },
+    "hours_message": "",
+    "url": "",
+    "last_updated": "2026-09-23T17:47:09.017539"
+  },
+  {
+    "id": 11038,
     "name": "Chicha San Chen | MSB",
     "address": "1 King\u2019s College Circle, Toronto, ON",
     "lat": 43.660801,
     "lng": -79.393501,
     "type": "TEA, BUBBLE TEA",
     "hours": {
-      "Monday": "10:00 AM - 6:00 PM",
-      "Tuesday": "10:00 AM - 6:00 PM",
-      "Wednesday": "10:00 AM - 6:00 PM",
-      "Thursday": "10:00 AM - 6:00 PM",
-      "Friday": "10:00 AM - 6:00 PM",
+      "Monday": "10:00 AM\u20136:00 PM",
+      "Tuesday": "10:00 AM\u20136:00 PM",
+      "Wednesday": "10:00 AM\u20136:00 PM",
+      "Thursday": "10:00 AM\u20136:00 PM",
+      "Friday": "10:00 AM\u20136:00 PM",
       "Saturday": "Closed",
       "Sunday": "Closed"
     },
     "hours_message": "",
     "url": "",
-    "last_updated": "2026-09-22T17:35:20.867488"
+    "last_updated": "2026-09-23T17:47:09.018899"
   },
   {
-    "id": "660",
+    "id": 660,
     "name": "CampusOne",
     "address": "253 College St, Toronto, ON",
     "lat": 43.657839,
     "lng": -79.399042,
     "type": "DINING COMMONS",
     "hours": {
-      "Monday": "7:00 AM - 9:00 PM",
-      "Tuesday": "7:00 AM - 9:00 PM",
-      "Wednesday": "7:00 AM - 9:00 PM",
-      "Thursday": "7:00 AM - 9:00 PM",
-      "Friday": "7:00 AM - 8:00 PM",
-      "Saturday": "8:00 AM - 8:00 PM",
-      "Sunday": "8:00 AM - 8:00 PM"
+      "Monday": "7:00 AM\u20139:00 PM",
+      "Tuesday": "7:00 AM\u20139:00 PM",
+      "Wednesday": "7:00 AM\u20139:00 PM",
+      "Thursday": "7:00 AM\u20139:00 PM",
+      "Friday": "7:00 AM\u20138:00 PM",
+      "Saturday": "8:00 AM\u20138:00 PM",
+      "Sunday": "8:00 AM\u20138:00 PM"
     },
     "hours_message": "",
     "url": "https://foodservices.utoronto.ca/campus-one-dining-commons/",
-    "last_updated": "2026-09-22T17:35:20.867941"
+    "last_updated": "2026-09-23T17:47:09.020555"
   },
   {
-    "id": "10054",
-    "name": "Fat Bastard Burrito",
-    "address": "187 College St., Toronto, ON",
-    "lat": 43.658804,
-    "lng": -79.394493,
-    "type": "BURRITOS, BOWLS",
-    "hours": {
-      "Monday": "11:00 AM - 11:00 PM",
-      "Tuesday": "11:00 AM - 11:00 PM",
-      "Wednesday": "11:00 AM - 11:00 PM",
-      "Thursday": "11:00 AM - 11:00 PM",
-      "Friday": "11:00 AM - 11:00 PM",
-      "Saturday": "11:00 AM - 11:00 PM",
-      "Sunday": "11:00 AM - 11:00 PM"
-    },
-    "hours_message": "",
-    "url": "",
-    "last_updated": "2026-09-22T17:35:20.868409"
-  },
-  {
-    "id": "10051",
+    "id": 10051,
     "name": "Dear Saigon",
     "address": "185 College St, Toronto, ON",
     "lat": 43.658776,
     "lng": -79.394398,
     "type": "VIETNAMESE FLAVOURS",
     "hours": {
-      "Monday": "11:00 AM - 9:00 PM",
-      "Tuesday": "11:00 AM - 9:00 PM",
-      "Wednesday": "11:00 AM - 9:00 PM",
-      "Thursday": "11:00 AM - 9:00 PM",
-      "Friday": "11:00 AM - 9:00 PM",
-      "Saturday": "11:00 AM - 9:00 PM",
-      "Sunday": "11:00 AM - 9:00 PM"
+      "Monday": "11:00 AM\u20139:00 PM",
+      "Tuesday": "11:00 AM\u20139:00 PM",
+      "Wednesday": "11:00 AM\u20139:00 PM",
+      "Thursday": "11:00 AM\u20139:00 PM",
+      "Friday": "11:00 AM\u20139:00 PM",
+      "Saturday": "11:00 AM\u20139:00 PM",
+      "Sunday": "11:00 AM\u20139:00 PM"
     },
     "hours_message": "",
     "url": "",
-    "last_updated": "2026-09-22T17:35:20.868953"
+    "last_updated": "2026-09-23T17:47:09.022072"
   },
   {
-    "id": "10060",
+    "id": 10054,
+    "name": "Fat Bastard Burrito",
+    "address": "187 College St., Toronto, ON",
+    "lat": 43.658804,
+    "lng": -79.394493,
+    "type": "BURRITOS, BOWLS",
+    "hours": {
+      "Monday": "11:00 AM\u201311:00 PM",
+      "Tuesday": "11:00 AM\u201311:00 PM",
+      "Wednesday": "11:00 AM\u201311:00 PM",
+      "Thursday": "11:00 AM\u201311:00 PM",
+      "Friday": "11:00 AM\u201311:00 PM",
+      "Saturday": "11:00 AM\u201311:00 PM",
+      "Sunday": "11:00 AM\u201311:00 PM"
+    },
+    "hours_message": "",
+    "url": "",
+    "last_updated": "2026-09-23T17:47:09.023717"
+  },
+  {
+    "id": 10060,
     "name": "Second Cup x Chocolato",
     "address": "179 College St., Toronto, ON",
     "lat": 43.658872,
     "lng": -79.394158,
     "type": "ICE CREAM, COFFEE, HOT CHOCOLATE",
     "hours": {
-      "Monday": "8:00 AM - 8:00 PM",
-      "Tuesday": "8:00 AM - 8:00 PM",
-      "Wednesday": "8:00 AM - 8:00 PM",
-      "Thursday": "8:00 AM - 8:00 PM",
-      "Friday": "8:00 AM - 6:00 PM",
-      "Saturday": "10:00 AM - 6:00 PM",
-      "Sunday": "10:00 AM - 6:00 PM"
+      "Monday": "8:00 AM\u20138:00 PM",
+      "Tuesday": "8:00 AM\u20138:00 PM",
+      "Wednesday": "8:00 AM\u20138:00 PM",
+      "Thursday": "8:00 AM\u20138:00 PM",
+      "Friday": "8:00 AM\u20136:00 PM",
+      "Saturday": "10:00 AM\u20136:00 PM",
+      "Sunday": "10:00 AM\u20136:00 PM"
     },
     "hours_message": "",
     "url": "",
-    "last_updated": "2026-09-22T17:35:20.869416"
+    "last_updated": "2026-09-23T17:47:09.025280"
   },
   {
-    "id": "4305",
+    "id": 2210,
+    "name": "18feet Espresso Bar & Cheong | Pharmacy Building",
+    "address": "144 College St., Toronto, ON",
+    "lat": 43.659933,
+    "lng": -79.391664,
+    "type": "Korean Caf\u00e9",
+    "hours": {
+      "Monday": "8:00 AM\u20136:00 PM",
+      "Tuesday": "8:00 AM\u20136:00 PM",
+      "Wednesday": "8:00 AM\u20136:00 PM",
+      "Thursday": "8:00 AM\u20136:00 PM",
+      "Friday": "8:00 AM\u20136:00 PM",
+      "Saturday": "Closed",
+      "Sunday": "Closed"
+    },
+    "hours_message": "",
+    "url": "",
+    "last_updated": "2026-09-23T17:47:09.027370"
+  },
+  {
+    "id": 4305,
     "name": "Kelly Caf\u00e9\ufffc\ufffc",
     "address": "113 St. Joseph St, Toronto",
     "lat": 43.664852,
@@ -613,50 +633,30 @@
     "hours": null,
     "hours_message": "For up-to-date operating hours and location details please visit the St. Michael's website",
     "url": "https://library.stmikes.utoronto.ca/using-the-library/hours/",
-    "last_updated": "2026-09-22T17:35:20.869487"
+    "last_updated": "2026-09-23T17:47:09.027537"
   },
   {
-    "id": "2210",
-    "name": "18feet Espresso Bar & Cheong | Pharmacy Building",
-    "address": "144 College St., Toronto, ON",
-    "lat": 43.659933,
-    "lng": -79.391664,
-    "type": "Korean Caf\u00e9",
-    "hours": {
-      "Monday": "8:00 AM - 6:00 PM",
-      "Tuesday": "8:00 AM - 6:00 PM",
-      "Wednesday": "8:00 AM - 6:00 PM",
-      "Thursday": "8:00 AM - 6:00 PM",
-      "Friday": "8:00 AM - 6:00 PM",
-      "Saturday": "Closed",
-      "Sunday": "Closed"
-    },
-    "hours_message": "",
-    "url": "",
-    "last_updated": "2026-09-22T17:35:20.869923"
-  },
-  {
-    "id": "10063",
+    "id": 10063,
     "name": "Kibo Caf\u00e9 & Market | Schwartz Reisman Innovation Campus",
     "address": "108 College St., Toronto, ON",
     "lat": 43.660328,
     "lng": -79.389145,
     "type": "SUSHI, COFFEE, TEA, BAKED GOODS",
     "hours": {
-      "Monday": "7:00 AM - 6:00 PM",
-      "Tuesday": "7:00 AM - 6:00 PM",
-      "Wednesday": "7:00 AM - 6:00 PM",
-      "Thursday": "7:00 AM - 6:00 PM",
-      "Friday": "7:00 AM - 6:00 PM",
+      "Monday": "7:00 AM\u20136:00 PM",
+      "Tuesday": "7:00 AM\u20136:00 PM",
+      "Wednesday": "7:00 AM\u20136:00 PM",
+      "Thursday": "7:00 AM\u20136:00 PM",
+      "Friday": "7:00 AM\u20136:00 PM",
       "Saturday": "Closed",
       "Sunday": "Closed"
     },
     "hours_message": "",
     "url": "",
-    "last_updated": "2026-09-22T17:35:20.870358"
+    "last_updated": "2026-09-23T17:47:09.028983"
   },
   {
-    "id": "10077",
+    "id": 10077,
     "name": "Sushi Umi",
     "address": "41 Charles St W., Toronto, ON",
     "lat": 43.66823,
@@ -664,79 +664,79 @@
     "type": "SUSHI",
     "hours": {
       "Monday": "Closed",
-      "Tuesday": "5:00 PM - 10:00 PM",
-      "Wednesday": "12:30 PM - 10:00 PM",
-      "Thursday": "12:30 PM - 10:00 PM",
-      "Friday": "12:30 PM - 10:00 PM",
-      "Saturday": "12:30 PM - 10:00 PM",
+      "Tuesday": "5:00 PM\u201310:00 PM",
+      "Wednesday": "12:30 PM\u201310:00 PM",
+      "Thursday": "12:30 PM\u201310:00 PM",
+      "Friday": "12:30 PM\u201310:00 PM",
+      "Saturday": "12:30 PM\u201310:00 PM",
       "Sunday": "Closed"
     },
     "hours_message": "",
     "url": "",
-    "last_updated": "2026-09-22T17:35:20.870881"
+    "last_updated": "2026-09-23T17:47:09.030435"
   },
   {
-    "id": "10074",
+    "id": 10074,
     "name": "Blue Claw Lobster Shack",
     "address": "25 Charles St W., Toronto, ON",
     "lat": 43.668235,
     "lng": -79.387279,
     "type": "SEAFOOD",
     "hours": {
-      "Monday": "11:30 AM - 9:00 PM",
-      "Tuesday": "11:30 AM - 9:00 PM",
-      "Wednesday": "11:30 AM - 9:00 PM",
-      "Thursday": "11:30 AM - 9:00 PM",
-      "Friday": "11:30 AM - 10:00 PM",
-      "Saturday": "11:30 AM - 10:00 PM",
-      "Sunday": "11:30 AM - 9:00 PM"
+      "Monday": "11:30 AM\u20139:00 PM",
+      "Tuesday": "11:30 AM\u20139:00 PM",
+      "Wednesday": "11:30 AM\u20139:00 PM",
+      "Thursday": "11:30 AM\u20139:00 PM",
+      "Friday": "11:30 AM\u201310:00 PM",
+      "Saturday": "11:30 AM\u201310:00 PM",
+      "Sunday": "11:30 AM\u20139:00 PM"
     },
     "hours_message": "",
     "url": "",
-    "last_updated": "2026-09-22T17:35:20.871342"
+    "last_updated": "2026-09-23T17:47:09.032068"
   },
   {
-    "id": "10080",
+    "id": 10080,
     "name": "Pearl Yorkville",
     "address": "730 Yonge St., Toronto, ON",
     "lat": 43.668808,
     "lng": -79.386943,
     "type": "CHINESE",
     "hours": {
-      "Monday": "11:00 AM - 10:00 PM",
-      "Tuesday": "11:00 AM - 10:00 PM",
-      "Wednesday": "11:00 AM - 10:00 PM",
-      "Thursday": "11:00 AM - 10:00 PM",
-      "Friday": "11:00 AM - 10:00 PM",
-      "Saturday": "11:00 AM - 10:00 PM",
-      "Sunday": "11:00 AM - 10:00 PM"
+      "Monday": "11:00 AM\u201310:00 PM",
+      "Tuesday": "11:00 AM\u201310:00 PM",
+      "Wednesday": "11:00 AM\u201310:00 PM",
+      "Thursday": "11:00 AM\u201310:00 PM",
+      "Friday": "11:00 AM\u201310:00 PM",
+      "Saturday": "11:00 AM\u201310:00 PM",
+      "Sunday": "11:00 AM\u201310:00 PM"
     },
     "hours_message": "",
     "url": "",
-    "last_updated": "2026-09-22T17:35:20.871787"
+    "last_updated": "2026-09-23T17:47:09.033593"
   },
   {
-    "id": "2279",
+    "id": 2279,
     "name": "Chestnut",
     "address": "89 Chestnut Street, Toronto, ON",
     "lat": 43.654097,
     "lng": -79.385007,
     "type": "DINING COMMONS",
     "hours": {
-      "Monday": "7:00 AM - 10:00 PM",
-      "Tuesday": "7:00 AM - 10:00 PM",
-      "Wednesday": "7:00 AM - 10:00 PM",
-      "Thursday": "7:00 AM - 10:00 PM",
-      "Friday": "7:00 AM - 9:00 PM",
-      "Saturday": "8:00 AM - 9:00 PM",
-      "Sunday": "8:00 AM - 10:00 PM"
+      "Monday": "7:00 AM\u201310:00 PM",
+      "Tuesday": "7:00 AM\u201310:00 PM",
+      "Wednesday": "7:00 AM\u201310:00 PM",
+      "Thursday": "7:00 AM\u201310:00 PM",
+      "Friday": "7:00 AM\u20139:00 PM",
+      "Saturday": "8:00 AM\u20139:00 PM",
+      "Sunday": "8:00 AM\u201310:00 PM"
     },
     "hours_message": "",
     "url": "https://foodservices.utoronto.ca/chestnut-dining-commons/",
-    "last_updated": "2026-09-22T17:35:20.872254"
+    "last_updated": "2026-09-23T17:47:09.035209"
   },
   {
-    "id": "4302",
+    "id": 4302,
     "name": "Canada Room",
     "address": "81A St. Mary\u2019s St., Toronto",
     "lat": 43.653226,
@@ -745,10 +745,10 @@
     "hours": null,
     "hours_message": "For up-to-date operating hours and meal plan details please visit the St. Michael's website",
     "url": "https://stmikes.utoronto.ca/community/st-michaels-college-residence/residence-life-meal-plans",
-    "last_updated": "2026-09-22T17:35:20.872331"
+    "last_updated": "2026-09-23T17:47:09.035341"
   },
   {
-    "id": "4308",
+    "id": 4308,
     "name": "Mike\u2019s Caf\u00e9\u00a0\ufffc",
     "address": "81A St. Mary\u2019s St., Toronto",
     "lat": 43.653226,
@@ -757,6 +757,6 @@
     "hours": null,
     "hours_message": "For up-to-date operating hours and meal plan details please visit the St. Michael's website",
     "url": "https://stmikes.utoronto.ca/news/brennan-hall-puts-community-at-the-heart-of-st-mikes",
-    "last_updated": "2026-09-22T17:35:20.872406"
+    "last_updated": "2026-09-23T17:47:09.035500"
   }
 ]
