@@ -4,6 +4,9 @@ import Nav from "@/components/Navbar";
 import { Montserrat } from "next/font/google";
 import Footer from "@/components/Footer";
 import { Analytics } from "@vercel/analytics/react";
+import { GoogleTagManager } from "@next/third-parties/google";
+
+const GTM_ID = "GTM-K8RHS9H4";
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -24,6 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${montserrat.variable} antialiased flex flex-col min-h-screen`}>
+        <GoogleTagManager gtmId={GTM_ID} />
         <Nav />
         <main className="pt-20 md:pt-32 lg:pt-40 flex-1">
           {children}
